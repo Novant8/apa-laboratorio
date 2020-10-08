@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void ruota(int v[], int N, int P, int dir);
+void ruota_alt(int v[], int N, int P, int dir);
 void stampaVettore(int v[]);
 
 int main() {
@@ -51,7 +52,7 @@ int main() {
         } while(dir != 1 && dir != -1);
 
         //Tutti i dati sono validi, si procede con la rotazione e la stampa del vettore
-        ruota(v, N, P, dir);
+        ruota_alt(v, N, P, dir);
         printf("Vettore risultato: ");
         stampaVettore(v);
     }
@@ -59,8 +60,12 @@ int main() {
     return 0;
 }
 
+/**
+ * Funzione che ruota un vettore a destra o sinistra di P posizioni. Complessità O(N*P).
+ * L'algoritmo consiste nel ruotare il vettore di 1 posizione per P volte, usando come variabile temporanea un solo intero.
+ */ 
 void ruota(int v[], int N, int P, int dir) {
-    int tmp, mem;
+    int tmp;
     for(int i=0; i<P; i++) {
         if(dir > 0) {
             //ROTAZIONE A DESTRA
@@ -75,6 +80,34 @@ void ruota(int v[], int N, int P, int dir) {
                 v[j] = v[j+1];
             v[N-1] = first; 
         }
+    }
+}
+
+/**
+ * Funzione che ruota un vettore a destra o sinistra. Questa versione è più ottimizzata (complessità O(N)).
+ * L'algoritmo consiste nel ruotare direttamente il vettore di P posizioni, usando come variabile temporanea un vettore lungo P.
+ */ 
+void ruota_alt(int v[], int N, int P, int dir) {
+    if(P>N)
+        P=P%N;
+    int tmp[P], i;
+        
+    if(dir > 0) {
+        //ROTAZIONE A DESTRA
+        for(i=0; i<P; i++)
+            tmp[i] = v[i+N-P];
+        for(i=N-P-1; i>=0; i--)
+            v[i+P] = v[i];
+        for(i=0; i<P; i++)
+            v[i] = tmp[i];
+    } else {
+        //ROTAZIONE A SINISTRA
+        for(i=0; i<P; i++)
+            tmp[i] = v[i];
+        for(i=P; i<N;i++)
+            v[i-P] = v[i];
+        for(i=0; i<P; i++)
+            v[N-P+i] = tmp[i];
     }
 }
 
