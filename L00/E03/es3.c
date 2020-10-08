@@ -2,7 +2,7 @@
 
 void ruota(int v[], int N, int P, int dir);
 void ruota_alt(int v[], int N, int P, int dir);
-void stampaVettore(int v[]);
+void stampaVettore(int v[], int N);
 
 int main() {
     
@@ -25,7 +25,7 @@ int main() {
 
     //Stampa vettore appena preso in input
     printf("Vettore input: ");
-    stampaVettore(v);
+    stampaVettore(v, N);
 
     int P,dir;
     while(1) {
@@ -54,7 +54,7 @@ int main() {
         //Tutti i dati sono validi, si procede con la rotazione e la stampa del vettore
         ruota_alt(v, N, P, dir);
         printf("Vettore risultato: ");
-        stampaVettore(v);
+        stampaVettore(v, N);
     }
 
     return 0;
@@ -111,9 +111,9 @@ void ruota_alt(int v[], int N, int P, int dir) {
     }
 }
 
-void stampaVettore(int v[]) {
+void stampaVettore(int v[], int N) {
     printf("[ ");
-    for(int i=0; i<6; i++)
+    for(int i=0; i<N; i++)
         printf("%d ", v[i]);
     printf("]\n");
 }
