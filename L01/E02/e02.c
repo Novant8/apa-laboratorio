@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#define MAX_NOMEFILE 20
 #define MAX_PAROLA 30
 #define MAX_RIGA 200
 
@@ -9,7 +8,7 @@
 #define FILE_DESTINAZIONE "ricodificato.txt"
 
 typedef struct {
-    char parola[MAX_PAROLA];
+    char parola[MAX_PAROLA+1];
     int codice;
 } Ricodifica;
 
@@ -44,17 +43,18 @@ int main() {
     fclose(fp_diz);
 
     //Ciclo di lettura di ogni riga
-    char riga[MAX_RIGA];
-    while(fgets(riga, MAX_RIGA, fp_src) != NULL) {
-        int i=0;
+    char riga[MAX_RIGA+1];
+    int i;
+    while(fgets(riga, MAX_RIGA+1, fp_src) != NULL) {
         /*
         Si effettua un ciclo di lettura carattere per carattere della riga appena estratta dal file sorgente (si termina il ciclo quando si incontra un terminatore).
         All'interno di ogni iterazione viene impostato il carattere in posizione i come inizio di una sottostringa.
         A questo punto viene controllato se la sottostringa (di lunghezza variabile) coincide con una delle parole contenute nel dizionario (tramite la funzione cercaIndiceDizionario).
-        In caso positivo viene scritto su file il codice relativo alla voce del dizionario (e i caratteri facenti parte della sottostringa vengono saltati, incrementando i della lunghezza della stessa).
+        In caso positivo viene scritto su file il codice relativo alla voce del dizionario (e i caratteri facenti parte della sottostringa vengono saltati, incrementando i della lunghezza di questa).
         In caso non siano state trovate voci del dizionario, allora viene scritto su file il singolo carattere in posizione i e si procede al successivo.
         */
-        while(i<MAX_RIGA && riga[i] != '\0') {
+        i=0;
+        while(riga[i] != '\0') {
             int str_len;
             int diz_idx = cercaIndiceDizionario(dizionario, n_ricodifiche, riga, i, &str_len);
             if(diz_idx >= 0) {
@@ -65,18 +65,19 @@ int main() {
                 i++;
             }
         }
-        //fputc('\n', fp_dst);
     }
 
     //Chiusura file sorgente e destinazione
     fclose(fp_dst);
     fclose(fp_src);
 
+    printf("Testo ricodificato salvato in %s\n", FILE_DESTINAZIONE);
+
     return 0;
 }
 
 /**
- * La seguente funzione verifica la presenza di una voce del dizionario come sottostringa di s, il cui primo carattere è indicato da un dato indice (inizio) e, in caso positivo, restituisce il relativo indice della struttura.
+ * La funzione verifica la presenza di una voce del dizionario come sottostringa di s, il cui primo carattere è indicato da un dato indice (inizio) e, in caso positivo, restituisce il relativo indice della struttura.
  * Parametri:
  * - dizionario: Array di strutture contenenti le parole nel dizionario e il loro relativo codice
  * - n_ricodifiche: Lunghezza del dizionario
@@ -89,8 +90,10 @@ int main() {
 */
 int cercaIndiceDizionario(const Ricodifica dizionario[], const int n_ricodifiche, const char s[], const int inizio, int* str_len) {
 
+    int diverso;
+
     for(int i=0; i<n_ricodifiche; i++) {
-        int diverso = 0; //Booleana
+        diverso = 0; //Booleana
         *str_len = 0;
         //Si effettua un ciclo carattere per carattere della parola del dizionario corrente, fermandosi al primo carattere diverso da quello corrente di s (oppure all'ultimo carattere)
         while(!diverso && dizionario[i].parola[*str_len] != '\0') {

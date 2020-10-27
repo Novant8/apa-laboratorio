@@ -110,6 +110,12 @@ void selezionaDati(comando_e cmd, Tratta tratte[], int n_tratte) {
     }
 }
 
+/**
+ * Dato che la procedura nei comandi r_date e r_ritardo è pressoché identica, questa funzione andrà gestire entrambi i comandi.
+ * Il flag bool_ritardo indica quale dei due comandi è stato invocato:
+ * - 0 se r_date
+ * - 1 se r_ritardo
+ */ 
 void date(Tratta tratte[], int n_tratte, int bool_ritardo) {
     const int N = 2;
     Data date_str[N];
@@ -181,6 +187,9 @@ void ritardo_tot(Tratta tratte[], int n_tratte) {
 
 }
 
+/**
+ * La funzione, a partire da una struttura Data, restituisce la data in formato intero, in modo da rendere 
+ */
 int data_toint(Data d) {
     return d.anno * 10000 + d.mese * 100 + d.giorno;
 }
