@@ -7,7 +7,7 @@ int** malloc2dR(int nr, int nc);
 int leggiMatrice(int*** m, int* nr, int* nc);
 void separa(int** mat, int nr, int nc, int* bianche, int* nere);
 void stampaVettore(int* v, int n);
-void free2dR(int** m, int nr);
+void free2d(int** m, int nr);
 
 int main() {
 
@@ -32,7 +32,7 @@ int main() {
     printf("Celle nere: ");
     stampaVettore(nere, n_nere);
     
-    free2dR(m,nr);
+    free2d(m,nr);
 }
 
 int** malloc2dR(int nr, int nc)  {
@@ -74,7 +74,7 @@ void stampaVettore(int* v, int n) {
     printf("]\n");
 }
 
-void free2dR(int** m, int nr) {
+void free2d(int** m, int nr) {
     for(int i=0; i<nr; i++)
         free(m[i]);
     free(m);
