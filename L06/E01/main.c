@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define FILE_BRANI "/home/alberto/Dropbox (Politecnico Di Torino Studenti)/apa-laboratorio/L06/E01/brani.txt"
+#define FILE_BRANI "brani.txt"
 #define MAX_BRANO 255
 
 typedef struct {
@@ -21,6 +21,7 @@ int main() {
         return -1;
     }
 
+    /* Allocazione strutture dati e lettura del file di input */
     int n_amici;
     fscanf(fp, "%d", &n_amici);
     Amico* amici = (Amico*)malloc(n_amici*sizeof(Amico));
@@ -40,6 +41,9 @@ int main() {
     free_struct(amici, n_amici);
 }
 
+/**
+ * Funzione wrapper che ricava tutte le possibili playlist
+ */ 
 int ricava_playlist(Amico* amici, int n_amici) {
     char* sol[n_amici];
     return princ_molt(0, amici, sol, n_amici, 0);
@@ -60,6 +64,9 @@ int princ_molt(int pos, Amico* amici, char* sol[], int n, int cnt) {
     return cnt;
 }
 
+/**
+ * Funzione che effettua la free di una struct di tipo Amico
+ */ 
 void free_struct(Amico* amici, int n_amici) {
     for(int i=0; i<n_amici; i++) {
         for(int j=0; j<amici[i].n_brani; j++)

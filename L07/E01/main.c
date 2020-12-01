@@ -34,13 +34,14 @@ int main() {
 }
 
 /**
- * Implementazione dell'algoritmo per trovare l'insieme delle parti.
+ * Implementazione dell'algoritmo per trovare l'insieme dei vertex cover, usando il modello combinatorio del powerset.
  * Non serve il parametro int* val, in quanto si sa già che i nodi sono identificati da interi che vanno da 0 a N.
  * Tutti gli insiemi che non soddisfano le condizioni di vertex cover non vengono stampati.
  */ 
 int vertex_cover(int pos, int* sol, Branch* branches, int n_nodes, int n_branches, int count) {
     if(pos >= n_nodes) {
-        if(is_valid(sol, branches, n_branches)) { /* Controllo se l'insieme trovato è un vertex cover */
+        /* Controllo se l'insieme trovato è un vertex cover */
+        if(is_valid(sol, branches, n_branches)) {
             printf("{ ");
             for(int i=0; i<n_nodes; i++)
                 if(sol[i]==1)

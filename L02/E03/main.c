@@ -7,8 +7,8 @@
 #define MAX_SEQUENZA 5
 #define MAX_OCCORRENZE 10
 
-#define FILE_SEQUENZE "/home/alberto/OneDrive/APA/L02/E03/sequenze.txt"
-#define FILE_TESTO "/home/alberto/OneDrive/APA/L02/E03/testo.txt"
+#define FILE_SEQUENZE "sequenze.txt"
+#define FILE_TESTO "testo.txt"
 
 typedef struct {
     int pos;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define MAXR 50
-#define FILE_MAPPA "/home/alberto/OneDrive/APA/L03/E01/mappa.txt"
+#define FILE_MAPPA "mappa.txt"
 
 typedef struct {
     int x;

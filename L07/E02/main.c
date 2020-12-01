@@ -4,7 +4,7 @@
 
 #define MAX_CAMPO 50
 #define MAX_FILE 20
-#define MAX_COMANDO 13
+#define MAX_COMANDO 16 //"aggiungi_tastiera"
 
 typedef struct {
     int d;
@@ -28,7 +28,8 @@ typedef struct node {
 } List;
 
 typedef enum {
-    c_add,
+    c_add_file,
+    c_add_keyboard,
     c_search,
     c_extract_cod,
     c_extract_date,
@@ -43,9 +44,11 @@ int add_from_file(List** head);
 int add_from_keyboard(List** head);
 List* add_to_list(List* head, Item i);
 List* search_item(List* head, int cod);
-List* list_extract_cod(List** head, int cod);
-List* list_extract_date(List** head, Date date_a, Date date_b);
+Item list_extract_cod(List** head, int cod);
+Item list_extract_date(List** head, Date date_a, Date date_b);
 Item get_item(FILE* fp);
+Item item_void();
+int item_is_void(Item i);
 List* new_node(Item i, List* next);
 void print_list(List* head);
 void print_item(FILE* fp, Item i);
@@ -75,8 +78,8 @@ int main() {
 
 cmd_e getcmd() {
     char cmd_str[MAX_COMANDO+1];
-    char* tbl[c_unknown] = {"aggiungi", "cerca", "cancella_cod", "cancella_data", "stampa", "fine"};
-    cmd_e cmd = c_add;
+    char* tbl[c_unknown] = {"carica_file", "aggiungi_tastiera", "cerca", "estrai_cod", "estrai_date", "stampa", "fine"};
+    cmd_e cmd = c_add_file;
 
     printf("Inserire un comando: ");
     scanf("%s", cmd_str);
@@ -92,23 +95,14 @@ cmd_e getcmd() {
  */ 
 void handlecmd(cmd_e cmd, List** head) {
     switch(cmd) {
-        case c_add:
-            printf("Vuoi aggiungere da file o da tastiera (f/t)? ");
-            getchar(); /* Istruzione extra per catturare il linebreak */
-            char mod = getchar();
-            switch(mod) {
-                case 'f':
-                    if(!add_from_file(head))
-                        printf("Errore in lettura file.\n");
-                    break;
-                case 't':
-                    printf("Inserire i dati: ");
-                    if(!add_from_keyboard(head))
-                        printf("Dati insertiti non validi.\n");
-                    break;
-                default:
-                    printf("Modalità di acquisizione sconosciuta.");
-            }
+        case c_add_file:
+            if(!add_from_file(head))
+                printf("Errore in lettura file.\n");
+            break;
+        case c_add_keyboard:
+            printf("Inserire i dati: ");
+            if(!add_from_keyboard(head))
+                printf("Dati inseriti non validi.\n");
             break;
         case c_search:
             printf("Inserire codice: ");
@@ -123,14 +117,13 @@ void handlecmd(cmd_e cmd, List** head) {
             }
             break;
         case c_extract_cod:
-            printf("Inserire codice: ");
+            printf("Inserire codice (numero intero): ");
             int cod_extr;
             scanf("%d", &cod_extr);
-            List* extr_c = list_extract_cod(head, cod_extr);
-            if(extr_c!=NULL) {
+            Item extr_c = list_extract_cod(head, cod_extr);
+            if(!item_is_void(extr_c)) {
                 printf("Estratto elemento: ");
-                print_item(stdout, extr_c->i);
-                free(extr_c);
+                print_item(stdout, extr_c);
             } else {
                 printf("Nessun elemento estratto.\n");
             }
@@ -138,18 +131,19 @@ void handlecmd(cmd_e cmd, List** head) {
         case c_extract_date:
             printf("Inserire due date (gg/mm/aaaa): ");
             Date date_a, date_b;
-            scanf("%d/%d/%d %d/%d/%d", &date_a.d, &date_a.m, &date_a.y, &date_b.d, &date_b.m, &date_b.y);
+            if(scanf("%d/%d/%d %d/%d/%d", &date_a.d, &date_a.m, &date_a.y, &date_b.d, &date_b.m, &date_b.y)!=6) {
+                printf("Input invalido.\n");
+                return;
+            }
             if(date_toint(date_a) > date_toint(date_b)) {
                 Date tmp = date_a; 
                 date_a = date_b;
                 date_b = tmp;
             }
             printf("Elementi estratti:\n");
-            List* extr_d = *head;
-            while((extr_d = list_extract_date(extr_d, date_a, date_b))!=NULL) {
-                print_item(stdout, extr_d->i);
-                free(extr_d);
-            }
+            Item extr_d;
+            while(!item_is_void((extr_d = list_extract_date(head, date_a, date_b))))
+                print_item(stdout, extr_d);
             break;
         case c_print:
             print_list(*head);
@@ -188,6 +182,7 @@ int add_from_file(List** head) {
  * La funzione prende in input da tastiera i dati di una persona, e li aggiunge alla lista.
  */ 
 int add_from_keyboard(List** head) {
+    getchar(); /* Istruzione extra per catturare il linebreak da stdin */
     Item i = get_item(stdin);
 
     if(i.cod<0)
@@ -230,18 +225,24 @@ List* search_item(List* head, int cod) {
  * - Il puntatore al dato estratto
  * - NULL se il codice non corrisponde a nessun dato
  */ 
-List* list_extract_cod(List** head, int cod) {
+Item list_extract_cod(List** head, int cod) {
     if(head == NULL)
-        return NULL;
+        return item_void();
     
-    List* n;
-    for(n=*head; n->next != NULL && n->next->i.cod != cod; n=n->next);
+    List *n, *p;
+    Item extr;
+    for(n = *head, p = NULL; n != NULL; p = n, n=n->next)
+        if(n->i.cod == cod) {
+            if(p==NULL)
+                *head = n->next;
+            else
+                p->next = n->next;
+            extr = n->i;
+            free(n);
+            return extr;
+        }
 
-    List* extr = n->next;
-    if(extr!=NULL)
-        n->next = extr->next;
-
-    return extr;
+    return item_void();
 }
 
 
@@ -252,23 +253,29 @@ List* list_extract_cod(List** head, int cod) {
  * - Il puntatore al dato estratto
  * - NULL se non è stato estratto nulla
  */ 
-List* list_extract_date(List** head, Date date_a, Date date_b) {
+Item list_extract_date(List** head, Date date_a, Date date_b) {
     if(head == NULL)
-        return NULL;
-    
-    List* n;
-    for(n=*head; n->next != NULL && (date_toint(n->next->i.data_nascita) < date_toint(date_a) || date_toint(n->next->i.data_nascita) > date_toint(date_b)); n=n->next);
+        return item_void();
 
-    List* extr = n->next;
-    if(extr!=NULL)
-        n->next = extr->next;
+    Item extr;
+    List *n, *p;
+    for(n = *head, p = NULL; n != NULL && date_toint(n->i.data_nascita) >= date_toint(date_a); p = n, n=n->next)
+        if(date_toint(n->i.data_nascita) <= date_toint(date_b)) {
+            if(p==NULL)
+                *head = n->next;
+            else
+                p->next = n->next;
+            extr = n->i;
+            free(n);
+            return extr;
+        }
 
-    return extr;
+    return item_void();
 }
 
 /**
  * La funzione legge da file i dati anagrafici relativi a una persona, e restituisce il relativo oggetto di tipo Item
- */ 
+ */
 Item get_item(FILE* fp) {
     Item i;
     int res = fscanf(fp, "A%d %s %s %d/%d/%d %s %s %d\n",
@@ -287,6 +294,16 @@ Item get_item(FILE* fp) {
 
     return i;
 }
+
+Item item_void() {
+    Item i;
+    i.cod = -1;
+    return i;
+}
+
+int item_is_void(Item i) {
+    return i.cod==-1;
+}
  
 List* new_node(Item i, List* next) {
     List* n = (List*)malloc(sizeof(List));
@@ -303,8 +320,10 @@ List* new_node(Item i, List* next) {
  * La funzione chiede in input il nome di un file di output, in cui verranno salvati tutti i dati contenuti nella lista
  */ 
 void print_list(List* head) {
-    if(head == NULL)
-        printf("Lista vuota");
+    if(head == NULL) {
+        printf("Lista vuota\n");
+        return;
+    }
 
     FILE* fp = getFile("w");
     if(!fp) {
@@ -314,6 +333,8 @@ void print_list(List* head) {
     
     for(List* n=head; n!=NULL; n=n->next)
         print_item(fp, n->i);
+    
+    printf("Fatto!\n");
 
     fclose(fp);
 }

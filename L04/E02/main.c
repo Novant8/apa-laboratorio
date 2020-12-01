@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int majority(int *a, int N);
-int contaOccorrenze(int toCount, int *a, int N);
+int count(int toCount, int *a, int N);
 int arrayContains(int search, int *a, int N);
 
 int main(int argc, char** argv) {
@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
         vet[i-1] = atoi(argv[i]);
 
     int maj = majority(vet, N);
-    if(maj>0)
+    if(maj>=0)
         printf("Il numero maggioritario è %d\n", maj);
     else
         printf("Non è presente un numero maggioritario nel vettore.\n");
@@ -38,13 +38,13 @@ int majority(int *a, int N) {
         return maj_sx;
 
     if(maj_sx != -1) {
-        n_sx = contaOccorrenze(maj_sx, a, N);
+        n_sx = count(maj_sx, a, N);
         if(n_sx > newN)
             return maj_sx;
     }
     
     if(maj_dx != -1) {
-        n_dx = contaOccorrenze(maj_dx, a, N);
+        n_dx = count(maj_dx, a, N);
         if(n_dx > newN)
             return maj_dx;
     }
@@ -52,7 +52,7 @@ int majority(int *a, int N) {
     return -1;
 }
 
-int contaOccorrenze(int toCount, int *a, int N) {
+int count(int toCount, int *a, int N) {
     int cnt=0;
     for(int i=0; i<N; i++)
         if(a[i]==toCount)

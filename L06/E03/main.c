@@ -43,43 +43,41 @@ typedef enum {
 
 comando_e leggiComando();
 void selezionaDati(comando_e cmd, int* n_tratte, Tratta** tratte, Tratta**** ordinamenti, int *tratte_ordinate_partenza, comando_e* ultimo_ordinamento);
-void stampa(int n_tratte, Tratta tratte[]);
+void stampa(int n_tratte, Tratta* tratte[]);
 void ordina(int n_tratte, Tratta* tratte[], comando_e cmd);
 int confronta(Tratta t1, Tratta t2, comando_e cmd);
 void cerca(int n_tratte, Tratta* tratte[], int tratte_ordinate_partenza);
 void ricercaDicotomica(char cerca[], int n_tratte, Tratta* tratte[]);
 int ricercaDicotomica_R(char cerca[], Tratta* tratte[], int l, int r);
 void ricercaLineare(char cerca[], int n_tratte, Tratta* tratte[]);
-int tratteOrdinate(Tratta tratte[], int n_tratte);
+int tratteOrdinatePartenza(Tratta tratte[], int n_tratte);
 int data_toint(Data d);
 int ora_toint(Ora o);
 void riempiTratte(FILE* fp, int n_tratte, Tratta tratte[], Tratta*** ordinamenti);
 void stampaTratta(Tratta t, FILE* fp);
 void structAlloc(Tratta** tratte, Tratta**** ordinamenti, int n_tratte);
-void structFree(Tratta* tratte, Tratta*** ordinamenti, int n_tratte);
-int leggiLog(Tratta** tratte, Tratta**** ordinamenti, int* n_tratte);
+void structFree(Tratta tratte[], Tratta*** ordinamenti);
+int leggiLog(Tratta** tratte, Tratta**** ordinamenti, int* n_tratte, int* tratte_ordinate_partenza);
 
 int main() {
 
-    int n_tratte;
+    int n_tratte, tratte_ordinate_partenza;
     Tratta* tratte = NULL;
     Tratta*** ordinamenti = NULL;
-    if(!leggiLog(&tratte, &ordinamenti, &n_tratte)) {
+    if(!leggiLog(&tratte, &ordinamenti, &n_tratte, &tratte_ordinate_partenza)) {
         printf("Errore in lettura del file.\n");
         return -1;
     }
 
     comando_e cmd;
     comando_e ultimo_ordinamento = r_ordina_data;
-    /* Se le tratte appena prese in input sono già ordinate per stazione di partenza, si può già da subito effettuare la ricerca dicotomica. */
-    int tratte_ordinate_partenza = tratteOrdinate(tratte, n_tratte);
 
     do {
         cmd = leggiComando();
         selezionaDati(cmd, &n_tratte, &tratte, &ordinamenti, &tratte_ordinate_partenza, &ultimo_ordinamento);
     } while(cmd != r_fine);
 
-    structFree(tratte, ordinamenti, n_tratte);
+    structFree(tratte, ordinamenti);
 
     return 0;
 }
@@ -101,7 +99,7 @@ comando_e leggiComando() {
 void selezionaDati(comando_e cmd, int* n_tratte, Tratta** tratte, Tratta**** ordinamenti, int *tratte_ordinate_partenza, comando_e* ultimo_ordinamento) {
     switch (cmd) {
         case r_stampa:
-            stampa(*n_tratte, **(*ordinamenti+*ultimo_ordinamento));
+            stampa(*n_tratte, (*ordinamenti)[*ultimo_ordinamento]);
             break;
         case r_ordina_data:
         case r_ordina_cod:
@@ -113,10 +111,10 @@ void selezionaDati(comando_e cmd, int* n_tratte, Tratta** tratte, Tratta**** ord
                 *tratte_ordinate_partenza = 1;
             break;
         case r_leggi:
-            leggiLog(tratte, ordinamenti, n_tratte);
+            leggiLog(tratte, ordinamenti, n_tratte, tratte_ordinate_partenza);
             break;
         case r_cerca:
-            cerca(*n_tratte, *(*ordinamenti+r_ordina_partenza), *tratte_ordinate_partenza);
+            cerca(*n_tratte, (*ordinamenti)[r_ordina_partenza], *tratte_ordinate_partenza);
             break;
         case r_fine:
             break;
@@ -125,7 +123,7 @@ void selezionaDati(comando_e cmd, int* n_tratte, Tratta** tratte, Tratta**** ord
     }
 }
 
-void stampa(int n_tratte, Tratta tratte[]) {
+void stampa(int n_tratte, Tratta* tratte[]) {
     printf("Vuoi stampare i dati su schermo o file (s/f)? ");
     getchar(); /* Istruzione extra per catturare il linebreak */
     char mod = getchar();
@@ -155,7 +153,7 @@ void stampa(int n_tratte, Tratta tratte[]) {
         fprintf(fp, "%d\n", n_tratte);
 
     for(int i=0; i<n_tratte; i++)
-        stampaTratta(tratte[i], fp);
+        stampaTratta(*tratte[i], fp);
 
     if(fp != stdout) {
         printf("Salvato nuovo file di log!\n");
@@ -163,7 +161,10 @@ void stampa(int n_tratte, Tratta tratte[]) {
     }
 }
 
-/* BUBBLE SORT */
+/**
+ * La funzione ordina le tratte mediante bubble sort.
+ * Il dato sulla base di cui ordinare dipende dal comando che viene invocato, identificato dal parametro cmd
+ */ 
 void ordina(int n_tratte, Tratta* tratte[], comando_e cmd) {
     Tratta* tmp;
     for(int i=1; i<n_tratte-1; i++)
@@ -176,6 +177,9 @@ void ordina(int n_tratte, Tratta* tratte[], comando_e cmd) {
     printf("Ordinato!\n");
 }
 
+/**
+ * La funzione confronta due tratte in base a un dato che dipende dal comando che viene invocato, identificato dal parametro cmd
+ */ 
 int confronta(Tratta t1, Tratta t2, comando_e cmd) {
     switch (cmd) {
         case r_ordina_data:  {
@@ -238,7 +242,7 @@ void ricercaDicotomica(char cerca[], int n_tratte, Tratta* tratte[]) {
 }
 
 int ricercaDicotomica_R(char cerca[], Tratta* tratte[], int l, int r) {
-    if(l==r)
+    if(l>r)
         return -1;
 
     int med = (r+l)/2;
@@ -246,19 +250,23 @@ int ricercaDicotomica_R(char cerca[], Tratta* tratte[], int l, int r) {
     if(res == 0)
         return med;
     if(res>0)
-        return ricercaDicotomica_R(cerca, tratte, med, r);
+        return ricercaDicotomica_R(cerca, tratte, med+1, r);
 
-    return ricercaDicotomica_R(cerca, tratte, l, med);
+    return ricercaDicotomica_R(cerca, tratte, l, med-1);
 }
 
 void ricercaLineare(char cerca[], int n_tratte, Tratta* tratte[]) {
     printf("Tratte trovate (ricerca lineare): \n");
+    int cerca_len = strlen(cerca);
     for(int i=0; i<n_tratte; i++)
-        if(strstr(tratte[i]->partenza, cerca) == tratte[i]->partenza)
+        if(strncmp(cerca, tratte[i]->partenza, cerca_len)==0)
             stampaTratta(*tratte[i], stdout);
 }
 
-int tratteOrdinate(Tratta tratte[], int n_tratte) {
+/**
+ * La funzione controlla se le tratte presenti in un array sono ordinate in modo crescente per stazione di partenza
+ */ 
+int tratteOrdinatePartenza(Tratta tratte[], int n_tratte) {
     for(int i=0; i<n_tratte-1; i++)
         if(confronta(tratte[i], tratte[i+1], r_ordina_partenza)>0)
             return 0;
@@ -302,7 +310,7 @@ void riempiTratte(FILE* fp, int n_tratte, Tratta tratte[], Tratta*** ordinamenti
 }
 
 void stampaTratta(Tratta t, FILE* fp) {
-    fprintf(fp, "%s %s %s %d/%02d/%d %d:%02d:%02d %d:%02d:%02d %d\n",
+    fprintf(fp, "%s %s %s %d/%02d/%d %02d:%02d:%02d %02d:%02d:%02d %d\n",
         t.codice,
         t.partenza,
         t.destinazione,
@@ -318,9 +326,12 @@ void stampaTratta(Tratta t, FILE* fp) {
         t.ritardo);
 }
 
+/**
+ * La funzione esegue l'allocazione sia dell'array di struct tratte, sia della matrice di puntatori di struct ordinamenti 
+ */ 
 void structAlloc(Tratta** tratte, Tratta**** ordinamenti, int n_tratte) {
     if(*tratte != NULL)
-        structFree(*tratte, *ordinamenti, n_tratte);
+        structFree(*tratte, *ordinamenti);
 
     *tratte = (Tratta*)malloc(sizeof(Tratta)*n_tratte);
     *ordinamenti = (Tratta***)malloc(sizeof(Tratta**)*N_ORDINAMENTI);
@@ -329,14 +340,20 @@ void structAlloc(Tratta** tratte, Tratta**** ordinamenti, int n_tratte) {
     
 }
 
-void structFree(Tratta* tratte, Tratta*** ordinamenti, int n_tratte) {
+/**
+ * La funzione esegue la free sia dell'array di struct tratte, sia della matrice di puntatori di struct ordinamenti 
+ */ 
+void structFree(Tratta tratte[], Tratta*** ordinamenti) {
     free(tratte);
     for(int i=0; i<N_ORDINAMENTI; i++)
         free(ordinamenti[i]);
     free(ordinamenti);
 }
 
-int leggiLog(Tratta** tratte, Tratta**** ordinamenti, int* n_tratte) {
+/**
+ * La funzione chiede in input un file di log, lo legge e salva i dati all'interno delle relative struct
+ */
+int leggiLog(Tratta** tratte, Tratta**** ordinamenti, int* n_tratte, int* tratte_ordinate_partenza) {
     char nomeFile[MAX_FILE+1];
     printf("Inserire nome del file di log: ");
     scanf("%s", nomeFile);
@@ -350,6 +367,9 @@ int leggiLog(Tratta** tratte, Tratta**** ordinamenti, int* n_tratte) {
     structAlloc(tratte, ordinamenti, *n_tratte);
 
     riempiTratte(fp, *n_tratte, *tratte, *ordinamenti);
+
+    /* Se le tratte appena prese in input sono già ordinate per stazione di partenza, si può già da subito effettuare la ricerca dicotomica. */
+    *tratte_ordinate_partenza = tratteOrdinatePartenza(*tratte, *n_tratte);
 
     return 1;
 }

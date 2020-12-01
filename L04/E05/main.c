@@ -159,7 +159,10 @@ void stampa(int n_tratte, Tratta* tratte[n_tratte]) {
     }
 }
 
-/* BUBBLE SORT */
+/**
+ * La funzione ordina le tratte mediante bubble sort.
+ * Il dato sulla base di cui ordinare dipende dal comando che viene invocato, identificato dal parametro cmd
+ */ 
 void ordina(int n_tratte, Tratta* tratte[n_tratte], comando_e cmd) {
     Tratta* tmp;
     for(int i=1; i<n_tratte-1; i++)
@@ -172,6 +175,9 @@ void ordina(int n_tratte, Tratta* tratte[n_tratte], comando_e cmd) {
     printf("Ordinato!\n");
 }
 
+/**
+ * La funzione confronta due tratte in base a un dato che dipende dal comando che viene invocato, identificato dal parametro cmd
+ */ 
 int confronta(Tratta t1, Tratta t2, comando_e cmd) {
     switch (cmd) {
         case r_ordina_data:  {
@@ -234,7 +240,7 @@ void ricercaDicotomica(char cerca[], int n_tratte, Tratta* tratte[n_tratte]) {
 }
 
 int ricercaDicotomica_R(char cerca[], Tratta* tratte[], int l, int r) {
-    if(l==r)
+    if(l>r)
         return -1;
 
     int med = (r+l)/2;
@@ -242,18 +248,22 @@ int ricercaDicotomica_R(char cerca[], Tratta* tratte[], int l, int r) {
     if(res == 0)
         return med;
     if(res>0)
-        return ricercaDicotomica_R(cerca, tratte, med, r);
+        return ricercaDicotomica_R(cerca, tratte, med+1, r);
 
-    return ricercaDicotomica_R(cerca, tratte, l, med);
+    return ricercaDicotomica_R(cerca, tratte, l, med-1);
 }
 
 void ricercaLineare(char cerca[], int n_tratte, Tratta* tratte[n_tratte]) {
     printf("Tratte trovate (ricerca lineare): \n");
+    int cerca_len = strlen(cerca);
     for(int i=0; i<n_tratte; i++)
-        if(strstr(tratte[i]->partenza, cerca) == tratte[i]->partenza)
+        if(strncmp(cerca, tratte[i]->partenza, cerca_len)==0) //Se i primi caratteri della stazione di partenza corrispondono alla stringa di ricerca, allora è stata trovata un'occorrenza
             stampaTratta(*tratte[i], stdout);
 }
 
+/**
+ * La funzione controlla se le tratte presenti in un array sono ordinate in modo crescente per stazione di partenza
+ */ 
 int tratteOrdinate(Tratta tratte[], int n_tratte) {
     for(int i=0; i<n_tratte-1; i++)
         if(confronta(tratte[i], tratte[i+1], r_ordina_partenza)>0)
@@ -298,7 +308,7 @@ void riempiTratte(FILE* fp, int n_tratte, Tratta tratte[], Tratta* ordinamenti[N
 }
 
 void stampaTratta(Tratta t, FILE* fp) {
-    fprintf(fp, "%s %s %s %d/%02d/%d %d:%02d:%02d %d:%02d:%02d %d\n",
+    fprintf(fp, "%s %s %s %d/%02d/%d %02d:%02d:%02d %02d:%02d:%02d %d\n",
         t.codice,
         t.partenza,
         t.destinazione,
