@@ -1,0 +1,80 @@
+TEST #1:
+zaffiro = 8 [6], rubino = 1 [6], topazio = 10 [20], smeraldo = 5 [8], TOT = 24 {max_rip = 3}
+Soluzione ottima di valore 88 usando 9 gemma/e
+Composizione collana: T R S S S T Z Z Z 
+TEST #2:
+zaffiro = 6 [2], rubino = 5 [15], topazio = 7 [2], smeraldo = 2 [21], TOT = 20 {max_rip = 5}
+Soluzione ottima di valore 131 usando 14 gemma/e
+Composizione collana: R T R T R T R T R S S T Z Z 
+TEST #3:
+zaffiro = 10 [17], rubino = 7 [16], topazio = 8 [18], smeraldo = 10 [17], TOT = 35 {max_rip = 3}
+Soluzione ottima di valore 204 usando 12 gemma/e
+Composizione collana: R T R T R S S S T Z Z Z 
+TEST #4:
+zaffiro = 7 [10], rubino = 1 [13], topazio = 9 [16], smeraldo = 2 [20], TOT = 19 {max_rip = 5}
+Soluzione ottima di valore 105 usando 7 gemma/e
+Composizione collana: T R S S T Z Z 
+TEST #5:
+zaffiro = 6 [8], rubino = 6 [25], topazio = 8 [20], smeraldo = 10 [10], TOT = 30 {max_rip = 7}
+Soluzione ottima di valore 408 usando 26 gemma/e
+Composizione collana: T R T R T R T R T R T R S S S S S S S T Z Z Z Z Z Z 
+TEST #6:
+zaffiro = 5 [21], rubino = 6 [7], topazio = 1 [13], smeraldo = 5 [1], TOT = 17 {max_rip = 9}
+Soluzione ottima di valore 137 usando 13 gemma/e
+Composizione collana: R S T Z Z Z Z Z R S S S S 
+TEST #7:
+zaffiro = 9 [7], rubino = 5 [3], topazio = 3 [10], smeraldo = 8 [8], TOT = 25 {max_rip = 6}
+Soluzione ottima di valore 132 usando 19 gemma/e
+Composizione collana: R T R T R S T Z Z Z Z Z Z R S S S S S 
+TEST #8:
+zaffiro = 7 [5], rubino = 8 [5], topazio = 6 [12], smeraldo = 8 [15], TOT = 29 {max_rip = 5}
+Soluzione ottima di valore 185 usando 20 gemma/e
+Composizione collana: R T R T R T R T R S S S S S T Z Z Z Z Z 
+TEST #9:
+zaffiro = 4 [1], rubino = 8 [19], topazio = 8 [13], smeraldo = 6 [19], TOT = 26 {max_rip = 1}
+Soluzione ottima di valore 52 usando 4 gemma/e
+Composizione collana: R S T Z 
+TEST #10:
+zaffiro = 9 [17], rubino = 3 [11], topazio = 9 [3], smeraldo = 9 [5], TOT = 30 {max_rip = 7}
+Soluzione ottima di valore 199 usando 21 gemma/e
+Composizione collana: T R T R T R S S S S S S S T Z Z Z Z Z Z Z 
+TEST #11:
+zaffiro = 1 [15], rubino = 1 [12], topazio = 5 [14], smeraldo = 10 [15], TOT = 17 {max_rip = 6}
+Soluzione ottima di valore 145 usando 10 gemma/e
+Composizione collana: T R S S S S S S T Z 
+TEST #12:
+zaffiro = 2 [19], rubino = 9 [14], topazio = 3 [6], smeraldo = 5 [19], TOT = 19 {max_rip = 3}
+Soluzione ottima di valore 155 usando 11 gemma/e
+Composizione collana: R T R T R S S S T Z Z 
+TEST #13:
+zaffiro = 4 [21], rubino = 5 [10], topazio = 2 [16], smeraldo = 7 [5], TOT = 18 {max_rip = 10}
+Soluzione ottima di valore 181 usando 16 gemma/e
+Composizione collana: R T R S T Z Z Z Z R S S S S S S 
+TEST #14:
+zaffiro = 5 [20], rubino = 6 [14], topazio = 9 [3], smeraldo = 6 [17], TOT = 26 {max_rip = 4}
+Soluzione ottima di valore 216 usando 16 gemma/e
+Composizione collana: R T R T R T R S S S S T Z Z Z Z 
+TEST #15:
+zaffiro = 9 [17], rubino = 8 [5], topazio = 9 [21], smeraldo = 2 [11], TOT = 28 {max_rip = 9}
+Soluzione ottima di valore 285 usando 21 gemma/e
+Composizione collana: T R T R T R T R T R T R T R T R S S T Z Z 
+TEST #16:
+zaffiro = 7 [25], rubino = 1 [19], topazio = 3 [3], smeraldo = 6 [20], TOT = 17 {max_rip = 8}
+Soluzione ottima di valore 295 usando 15 gemma/e
+Composizione collana: T R S S S S S S T Z Z Z Z Z Z 
+TEST #17:
+zaffiro = 6 [19], rubino = 2 [22], topazio = 5 [3], smeraldo = 4 [11], TOT = 17 {max_rip = 8}
+Soluzione ottima di valore 173 usando 13 gemma/e
+Composizione collana: T R T R S S S S T Z Z Z Z 
+TEST #18:
+zaffiro = 9 [3], rubino = 3 [1], topazio = 5 [2], smeraldo = 3 [24], TOT = 20 {max_rip = 9}
+Soluzione ottima di valore 92 usando 13 gemma/e
+Composizione collana: T R T R T R S S S T Z Z Z 
+TEST #19:
+zaffiro = 5 [19], rubino = 10 [1], topazio = 7 [6], smeraldo = 9 [5], TOT = 31 {max_rip = 1}
+Soluzione ottima di valore 31 usando 4 gemma/e
+Composizione collana: R S T Z 
+TEST #20:
+zaffiro = 4 [13], rubino = 8 [1], topazio = 2 [8], smeraldo = 10 [23], TOT = 24 {max_rip = 3}
+Soluzione ottima di valore 127 usando 11 gemma/e
+Composizione collana: R T R S T Z Z Z R S S 
