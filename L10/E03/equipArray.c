@@ -10,6 +10,7 @@ struct equipArray_s {
 
 equipArray_t equipArray_init() {
     equipArray_t equipArray = (equipArray_t)malloc(sizeof(struct equipArray_s));
+    equipArray->inUse = 0;
     return equipArray;
 }
 
@@ -68,25 +69,22 @@ void equipArray_update(equipArray_t equipArray, invArray_t invArray) {
 }
 
 int equipArray_remove(equipArray_t equipArray, invArray_t invArray, int index) {
-    if(equipArray == NULL || invArray == NULL)
-        return;
     int tmp;
     //Sposta l'oggetto da rimuovere al fondo
-    for(int i=0; i<equipArray->inUse-1; i++)
-        if(equipArray->items[i] == index) {
-            tmp = equipArray->items[i];
-            equipArray->items[i] = equipArray->items[equipArray->inUse-1];
-            equipArray->items[equipArray->inUse-1] = tmp;
-            equipArray->inUse--;
-            return 1;
-        }
+    if(equipArray == NULL || invArray == NULL)
+        for(int i=0; i<equipArray->inUse-1; i++)
+            if(equipArray->items[i] == index) {
+                tmp = equipArray->items[i];
+                equipArray->items[i] = equipArray->items[equipArray->inUse-1];
+                equipArray->items[equipArray->inUse-1] = tmp;
+                equipArray->inUse--;
+                return 1;
+            }
     return 0;
 }
 
 int equipArray_add(equipArray_t equipArray, invArray_t invArray, int index) {
-    if(equipArray == NULL || invArray == NULL)
-        return;
-    if(equipArray->inUse >= EQUIP_SLOT)
+    if(equipArray == NULL || invArray == NULL || equipArray->inUse >= EQUIP_SLOT)
         return 0;
     equipArray->items[equipArray->inUse++] = index;
     return 1;

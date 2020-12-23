@@ -23,7 +23,7 @@ static void equipStats_update(pg_t* pgp, invArray_t invArray) {
 
 int pg_read(FILE *fp, pg_t *pgp) {
     if(pgp == NULL)
-        return;
+        return 0;
     int res = fscanf(fp, "%s %s %s", pgp->cod, pgp->nome, pgp->classe);
     res = res == 3 && stat_read(fp, &pgp->b_stat);
     return res;
