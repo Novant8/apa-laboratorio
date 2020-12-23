@@ -14,19 +14,27 @@ equipArray_t equipArray_init() {
 }
 
 int equipArray_inUse(equipArray_t equipArray) {
+    if(equipArray == NULL)
+        return 0;
     return equipArray->inUse;
 }
 
 void equipArray_print(FILE *fp, equipArray_t equipArray, invArray_t invArray) {
+    if(equipArray == NULL)
+        return;
     for(int i=0; i<equipArray->inUse; i++)
         inv_print(fp, invArray_getByIndex(invArray, equipArray->items[i]));
 }
 
 void equipArray_free(equipArray_t equipArray) {
+    if(equipArray == NULL)
+        return;
     free(equipArray);
 }
 
 void equipArray_update(equipArray_t equipArray, invArray_t invArray) {
+    if(equipArray == NULL || invArray == NULL)
+        return;
     char op[2], itemName[LEN];
     printf("Vuoi aggiungere o rimuovere oggetti (r/a)? ");
     scanf("%s", op);
@@ -60,6 +68,8 @@ void equipArray_update(equipArray_t equipArray, invArray_t invArray) {
 }
 
 int equipArray_remove(equipArray_t equipArray, invArray_t invArray, int index) {
+    if(equipArray == NULL || invArray == NULL)
+        return;
     int tmp;
     //Sposta l'oggetto da rimuovere al fondo
     for(int i=0; i<equipArray->inUse-1; i++)
@@ -74,6 +84,8 @@ int equipArray_remove(equipArray_t equipArray, invArray_t invArray, int index) {
 }
 
 int equipArray_add(equipArray_t equipArray, invArray_t invArray, int index) {
+    if(equipArray == NULL || invArray == NULL)
+        return;
     if(equipArray->inUse >= EQUIP_SLOT)
         return 0;
     equipArray->items[equipArray->inUse++] = index;
@@ -81,5 +93,7 @@ int equipArray_add(equipArray_t equipArray, invArray_t invArray, int index) {
 }
 
 int equipArray_getEquipByIndex(equipArray_t equipArray, int index) {
+    if(equipArray == NULL || index < 0 || index >= equipArray->inUse)
+        return -1;
     return equipArray->items[index];
 }

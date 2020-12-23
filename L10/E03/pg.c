@@ -22,16 +22,24 @@ static void equipStats_update(pg_t* pgp, invArray_t invArray) {
 }
 
 int pg_read(FILE *fp, pg_t *pgp) {
+    if(pgp == NULL)
+        return;
     int res = fscanf(fp, "%s %s %s", pgp->cod, pgp->nome, pgp->classe);
     res = res == 3 && stat_read(fp, &pgp->b_stat);
     return res;
 }
 
 void pg_clean(pg_t *pgp) {
+    if(pgp == NULL)
+        return;
     equipArray_free(pgp->equip);
 }
 
 void pg_print(FILE *fp, pg_t *pgp, invArray_t invArray) {
+    if(pgp == NULL) {
+        printf("Personaggio invalido.\n");
+        return;
+    }
     fprintf(fp, "%s %s %s ", pgp->cod, pgp->nome, pgp->classe);
     stat_print(fp, &pgp->b_stat, 1);
     printf("\nEquip:\n");
@@ -43,6 +51,8 @@ void pg_print(FILE *fp, pg_t *pgp, invArray_t invArray) {
 }
 
 void pg_updateEquip(pg_t *pgp, invArray_t invArray) {
+    if(pgp == NULL || invArray == NULL)
+        return;
     equipArray_update(pgp->equip, invArray);
 
     //Aggiorna i dati relativi alle statistiche del personaggio

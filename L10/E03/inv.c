@@ -40,6 +40,8 @@ stat_t empty_stats() {
 }
 
 int stat_read(FILE *fp, stat_t *statp) {
+    if(statp == NULL)
+        return 0;
     int res = fscanf(fp, "%d %d %d %d %d %d",
                 &statp->hp,
                 &statp->mp,
@@ -51,6 +53,11 @@ int stat_read(FILE *fp, stat_t *statp) {
 }
 
 void stat_print(FILE *fp, stat_t *statp, int soglia) {
+    if(statp == NULL) {
+        printf("Statistiche invalide.\n");
+        return;
+    }
+
     stat_t to_print;
     
     //In base al valore della booleana soglia, vengono stampate statistiche negative o  no
@@ -69,17 +76,25 @@ void stat_print(FILE *fp, stat_t *statp, int soglia) {
 }
 
 void inv_read(FILE *fp, inv_t *invp) {
+    if(invp == NULL)
+        return;
     fscanf(fp, "%s %s", invp->nome, invp->tipo);
     stat_read(fp, &invp->stat);
     printf("\n");
 }
 
 void inv_print(FILE *fp, inv_t *invp) {
+    if(invp == NULL) {
+        printf("Oggetto invalido\n");
+        return;
+    }
     fprintf(fp, "%s %s ", invp->nome, invp->tipo);
     stat_print(fp, &invp->stat, 0);
     printf("\n");
 }
 
 stat_t inv_getStat(inv_t *invp) {
+    if(invp == NULL)
+        return empty_stats();
     return invp->stat;
 }

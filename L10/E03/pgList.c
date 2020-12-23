@@ -23,6 +23,8 @@ pgList_t pgList_init() {
 }
 
 void pgList_read(FILE *fp, pgList_t pgList) {
+    if(pgList == NULL)
+        return;
     pg_t pg;
     while(pg_read(fp, &pg)) {
         pgList_insert(pgList, pg);
@@ -31,6 +33,8 @@ void pgList_read(FILE *fp, pgList_t pgList) {
 }
 
 void pgList_print(FILE *fp, pgList_t pgList, invArray_t invArray) {
+    if(pgList == NULL)
+        return;
     for(pgLink_t n=pgList->head; n != NULL; n=n->next)
         pg_print(fp, &n->pg, invArray);
 }
@@ -48,6 +52,8 @@ static pgLink_t pgNode_new(pg_t pg, pgLink_t next) {
  * La funzione effettua un inserimento IN CODA alla lista
  */ 
 void pgList_insert(pgList_t pgList, pg_t pg) {
+    if(pgList == NULL)
+        return;
     pgLink_t n = pgNode_new(pg, NULL);
     if(pgList->head == NULL)
         pgList->head = pgList->tail = n;
@@ -56,6 +62,8 @@ void pgList_insert(pgList_t pgList, pg_t pg) {
 }
 
 void pgList_remove(pgList_t pgList, char* cod) {
+    if(pgList == NULL || cod == NULL)
+        return;
     for(pgLink_t n = pgList->head, p; n!=NULL; p=n, n=n->next)
         if(strcmp(n->pg.cod,cod) == 0) {
             if(n == pgList->head)
@@ -68,9 +76,10 @@ void pgList_remove(pgList_t pgList, char* cod) {
 }
 
 pg_t *pgList_searchByCode(pgList_t pgList, char* cod) {
-    for(pgLink_t n = pgList->head; n!=NULL; n=n->next)
-        if(strcmp(n->pg.cod,cod) == 0)
-            return &n->pg;
+    if(pgList != NULL)
+        for(pgLink_t n = pgList->head; n!=NULL; n=n->next)
+            if(strcmp(n->pg.cod,cod) == 0)
+                return &n->pg;
     return NULL;
 }
 

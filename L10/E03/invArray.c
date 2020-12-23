@@ -17,6 +17,8 @@ invArray_t invArray_init() {
 }
 
 void invArray_read(FILE *fp, invArray_t invArray) {
+    if(invArray == NULL)
+        return;
     fscanf(fp, "%d", &invArray->n_items);
     invArray->items = (inv_t*)malloc(sizeof(inv_t)*invArray->n_items);
     for(int i=0; i<invArray->n_items; i++)
@@ -24,26 +26,35 @@ void invArray_read(FILE *fp, invArray_t invArray) {
 }
 
 void invArray_print(FILE *fp, invArray_t invArray) {
+    if(invArray == NULL)
+        return;
     for(int i=0; i<invArray->n_items; i++)
         inv_print(fp, invArray->items + i);
 }
 
 void invArray_printByIndex(FILE *fp, invArray_t invArray, int index) {
+    if(invArray == NULL)
+        return;
     inv_print(fp, invArray_getByIndex(invArray, index));
 }
 
 inv_t *invArray_getByIndex(invArray_t invArray, int index) {
+    if(index < 0 || index >= invArray->n_items)
+        return NULL;
     return invArray->items+index;
 }
 
 int invArray_searchByName(invArray_t invArray, char *name) {
-    for(int i=0; i<invArray->n_items; i++)
-        if(strcmp(invArray->items[i].nome, name) == 0)
-            return i;
+    if(invArray != NULL)
+        for(int i=0; i<invArray->n_items; i++)
+            if(strcmp(invArray->items[i].nome, name) == 0)
+                return i;
     return -1;
 }
 
 void invArray_free(invArray_t invArray) {
+    if(invArray == NULL)
+        return;
     free(invArray->items);
     free(invArray);
 }
