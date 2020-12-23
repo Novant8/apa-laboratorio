@@ -41,7 +41,7 @@ int main() {
     } while(cmd != c_end);
 
     //FREE
-    free_ch(tabch->headCh);
+    free_chList(tabch->headCh);
     free(tabch);
     free(tabinv->arrInv);
     free(tabinv);
@@ -50,7 +50,7 @@ int main() {
 }
 
 cmd_e readcmd() {
-    char* cmds[c_unknown] = {"aggiungi_personaggio", "cerca_personaggio", "elimina_personaggio", "aggiungi_equipaggiamento", "rimuovi_equipaggiamento", "cerca_oggetto", "fine"};
+    char* cmds[c_unknown] = {"aggiungi_personaggio", "cerca_personaggio", "elimina_personaggio", "equipaggia", "disequipaggia", "cerca_oggetto", "fine"};
     char cmd_str[MAX_CMD+1];
     printf("Inserire comando: ");
     scanf("%s", cmd_str);
@@ -70,7 +70,6 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
     switch(cmd) {
         case c_add_ch:
             printf("Inserire i dati del personaggio: ");
-            getchar(); /* Istruzione per catturare carattere extra */
             ch_i = readCh(stdin);
             if(ch_i.cod > 0)
                 addCh_list(ch_i, tabch);
@@ -79,7 +78,7 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
             break;
         case c_search_ch:
             printf("Inserire codice personaggio: ");
-            scanf("%d", &cod);
+            scanf("\nPG%d", &cod);
             ch = searchCh(cod, tabch->headCh);
             if(ch != NULL)
                 printChStats(ch);
@@ -88,26 +87,37 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
             break;
         case c_del_ch:
             printf("Inserire codice personaggio: ");
-            scanf("%d", &cod);
-            if(delCh_list(cod, tabch))
-                printf("Personaggio cancellato!\n");
-            else
+            scanf("\nPG%d", &cod);
+            ch_i = delCh_list(cod, tabch);
+            if(!ch_isvoid(ch_i)) {
+                printf("Personaggio estratto:\n");
+                printChStats(&ch_i);
+                free_ch(ch_i);
+            } else {
                 printf("Nessun personaggio trovato.\n");
+            }
             break;
         case c_add_equipment:
         case c_rmv_equipment:
             printf("Inserire codice personaggio: ");
-            scanf("%d", &cod);
+            scanf("\nPG%d", &cod);
             printf("Inserire nome oggetto: ");
             scanf("%s", item_name);
 
             item = searchItem(item_name, tabinv);
             ch = searchCh(cod, tabch->headCh);
             if(item != NULL)
-                if(cmd == c_add_equipment)
-                    equipItem(item, ch);
-                else
-                    removeItem(item, ch);
+                if(cmd == c_add_equipment) {
+                    if(equipItem(item, ch))
+                        printf("Oggetto aggiunto!\n");
+                    else
+                        printf("Inventario pieno!\n");
+                } else {
+                    if(removeItem(item, ch))
+                        printf("Oggetto rimosso!\n");
+                    else
+                        printf("L'oggetto non era equipaggiato!\n");
+                }
             else
                 printf("Dati inseriti non validi.\n");
             break;
@@ -122,7 +132,7 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
             break;
         case c_end:
             break;
-        case c_unknown:
+        case c_unknown: 
             printf("Comando sconosciuto.\n");
     }
 }

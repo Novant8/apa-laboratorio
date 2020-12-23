@@ -3,8 +3,9 @@
 #include <string.h>
 
 #define MAX_INV 8
+#define MAX_COD_CH 6
 #define MAX_STR 50
-#define MAX_CMD 24
+#define MAX_CMD 20
 #define FILE_INV "inventario.txt"
 #define FILE_CH "pg.txt"
 
@@ -67,7 +68,7 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv);
 int addCharacters(tabCh_t* tabch);
 int fillInventory(tabInv_t* tabinv);
 void addCh_list(ch_t ch, tabCh_t* tabch);
-int delCh_list(int cod, tabCh_t* tabch);
+ch_t delCh_list(int cod, tabCh_t* tabch);
 int equipItem(inv_t* item, ch_t* ch);
 int removeItem(inv_t* item, ch_t* ch);
 nodeCh_t* new_nodeCh(ch_t ch, nodeCh_t* next);
@@ -75,13 +76,14 @@ inv_t* searchItem(char item_name[], tabInv_t* tabinv);
 ch_t* searchCharacter(int cod, nodeCh_t* head);
 stat_t getStats(ch_t* ch);
 stat_t statsSum(stat_t s1, stat_t s2);
-void print_list(nodeCh_t* head);
 ch_t readCh(FILE* fp);
 inv_t readItem(FILE* fp);
 void printCh(ch_t ch);
 void printEquipment(ch_t ch);
 void printStats(stat_t s);
-void free_ch(nodeCh_t* head);
+void free_chList(nodeCh_t* head);
+void free_ch(ch_t ch);
+int ch_isvoid(ch_t ch);
 
 int main() {
 
@@ -104,7 +106,7 @@ int main() {
     } while(cmd != c_end);
 
     //FREE
-    free_ch(tabch->headCh);
+    free_chList(tabch->headCh);
     free(tabch);
     free(tabinv->arrInv);
     free(tabinv);
@@ -113,7 +115,7 @@ int main() {
 }
 
 cmd_e readcmd() {
-    char* cmds[c_unknown] = {"aggiungi_personaggio", "stampa_statistiche", "elimina_personaggio", "aggiungi_equipaggiamento", "rimuovi_equipaggiamento", "fine"};
+    char* cmds[c_unknown] = {"aggiungi_personaggio", "stampa_statistiche", "elimina_personaggio", "equipaggia", "disequipaggia", "fine"};
     char cmd_str[MAX_CMD+1];
     printf("Inserire comando: ");
     scanf("%s", cmd_str);
@@ -131,6 +133,7 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
     switch(cmd) {
         case c_add_ch:
             printf("Inserire i dati del personaggio: ");
+            getchar(); /* Istruzione per catturare carattere extra */
             ch_i = readCh(stdin);
             if(ch_i.cod > 0)
                 addCh_list(ch_i, tabch);
@@ -139,7 +142,7 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
             break;
         case c_get_ch_stats:
             printf("Inserire codice personaggio: ");
-            scanf("%d", &cod);
+            scanf("\nPG%d", &cod);
             ch = searchCharacter(cod, tabch->headCh);
             if(ch != NULL) {
                 stat_t stats = getStats(ch);
@@ -155,16 +158,20 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
             break;
         case c_del_ch:
             printf("Inserire codice personaggio: ");
-            scanf("%d", &cod);
-            if(delCh_list(cod, tabch))
-                printf("Personaggio cancellato!\n");
-            else
+            scanf("\nPG%d", &cod);
+            ch_i = delCh_list(cod, tabch);
+            if(!ch_isvoid(ch_i)) {
+                printf("Personaggio estratto:\n");
+                printCh(ch_i);
+                free_ch(ch_i);
+            } else {
                 printf("Nessun personaggio trovato.\n");
+            }
             break;
         case c_add_equipment:
         case c_rmv_equipment:
             printf("Inserire codice personaggio: ");
-            scanf("%d", &cod);
+            scanf("\nPG%d", &cod);
             printf("Inserire nome oggetto: ");
             char item_name[MAX_STR+1];
             scanf("%s", item_name);
@@ -172,10 +179,17 @@ void handlecmd(cmd_e cmd, tabCh_t* tabch, tabInv_t* tabinv) {
             inv_t* item = searchItem(item_name, tabinv);
             ch_t* ch = searchCharacter(cod, tabch->headCh);
             if(item != NULL)
-                if(cmd == c_add_equipment)
-                    equipItem(item, ch);
-                else
-                    removeItem(item, ch);
+                if(cmd == c_add_equipment) {
+                    if(equipItem(item, ch))
+                        printf("Oggetto aggiunto!\n");
+                    else
+                        printf("Inventario pieno!\n");
+                } else {
+                    if(removeItem(item, ch))
+                        printf("Oggetto rimosso!\n");
+                    else
+                        printf("L'oggetto non era equipaggiato!\n");
+                }
             else
                 printf("Dati inseriti non validi.\n");
             break;
@@ -198,7 +212,7 @@ int addCharacters(tabCh_t* tabch) {
         return 0;
 
     ch_t ch_tmp;
-    while((ch_tmp = readCh(fp)).cod!=-1) { //Se è stato letto un personaggio valido
+    while(!ch_isvoid(ch_tmp = readCh(fp))) { //Se è stato letto un personaggio valido
         addCh_list(ch_tmp, tabch);
         tabch->nCh++;
     }
@@ -213,7 +227,7 @@ int addCharacters(tabCh_t* tabch) {
  * Return: 
  * - 1 se la lettura va a buon fine
  * - 0 se c'è stato un errore nella lettura
- */ 
+ */
 int fillInventory(tabInv_t* tabinv) {
     FILE* fp = fopen(FILE_INV, "r");
     if(!fp)
@@ -253,49 +267,53 @@ void addCh_list(ch_t ch, tabCh_t* tabch) {
  * - 1 se il personaggio è stato cancellato
  * - 0 se non è stato trovato un personaggio avente codice cod
  */ 
-int delCh_list(int cod, tabCh_t* tabch)  {
-    nodeCh_t *n, *tmp;
-    for(n=tabch->headCh; n->next != NULL; n=n->next)
-        if(n->next->ch.cod == cod) {
-            tmp = n->next;
-            n->next = n->next->next;
-            free(tmp);
-            return 1;
+ch_t delCh_list(int cod, tabCh_t* tabch)  {
+    ch_t ext;
+    ext.cod = -1;
+    nodeCh_t *n, *p;
+    for(n = tabch->headCh, p = NULL; n != NULL; p = n, n=n->next)
+        if(n->ch.cod == cod) {
+            if(p==NULL)
+                tabch->headCh = n->next;
+            else
+                p->next = n->next;
+            ext = n->ch;
+            free(n);
+            break;
         }
-    return 0;
+    return ext;
 }
 
 /**
  * La funzione aggiunge l'oggetto puntato da item nell'inventario del personaggio puntato da ch
  */ 
 int equipItem(inv_t* item, ch_t* ch) {
-    int n_items = ch->equip->inUse;
-    if(n_items >= MAX_INV)
+    if(ch->equip->inUse >= MAX_INV)
         return 0;
-    ch->equip->arrEq[n_items] = item;
-    ch->equip->inUse++;
+    ch->equip->arrEq[ch->equip->inUse++] = item;
     return 1;
 }
 
 /**
  * La funzione rimuove l'oggetto puntato da item nell'inventario del personaggio puntato da ch
+ * Return: booleana che indica se l'oggetto è stato rimosso (se è falsa significa che l'oggetto non era equipaggiato)
  */ 
 int removeItem(inv_t* item, ch_t* ch) {
     int n_items = ch->equip->inUse;
-    if(n_items >= MAX_INV)
-        return 0;
     
-    int i,j;
-    /* Ricerca dell'indice dell'array contenente il puntatore item */
+    int i,j, found = 0;
+    inv_t* tmp;
+    /* Scannerizza l'array e porta l'oggetto da rimuovere al fondo */
     for(int i=0; i<n_items; i++)
-        if(ch->equip->arrEq+i == item) {
-            /* Shift a sinistra di uno dell'array equipaggiamento, solo per gli indici maggiori di quello da rimuovere */
-            for(j=i; j<n_items-1; j++)
-                ch->equip->arrEq[i] = ch->equip->arrEq[i+1];
-            break;
+        if(ch->equip->arrEq[i] == item) {
+            found = 1;
+            tmp = ch->equip->arrEq[i];
+            ch->equip->arrEq[i] = ch->equip->arrEq[i+1];
+            ch->equip->arrEq[i+1] = tmp;
         }
-    ch->equip->inUse--;
-    return 1;
+    if(found)
+        ch->equip->inUse--;
+    return found;
 }
 
 nodeCh_t* new_nodeCh(ch_t ch, nodeCh_t* next) {
@@ -339,6 +357,9 @@ stat_t getStats(ch_t* ch) {
     return s;
 }
 
+/**
+ * La funzione, date due strutture contenenti statistiche, restituisce una struttura contenente la loro somma
+ */ 
 stat_t statsSum(stat_t s1, stat_t s2) {
     stat_t sum;
     sum.hp = s1.hp + s2.hp;
@@ -350,12 +371,6 @@ stat_t statsSum(stat_t s1, stat_t s2) {
     return sum;
 }
 
-void print_list(nodeCh_t* head) {
-    nodeCh_t* n;
-    for(n=head; n!=NULL; n=n->next)
-        printCh(n->ch);
-}
-
 /**
  * La funzione legge i dati relativi a un personaggio da file:
  * Return:
@@ -364,7 +379,7 @@ void print_list(nodeCh_t* head) {
  */ 
 ch_t readCh(FILE* fp) {
     ch_t ch;
-    int res = fscanf(fp, "PG%d %s %s %d %d %d %d %d %d\n",
+    int res = fscanf(fp, "\nPG%d %s %s %d %d %d %d %d %d",
                         &ch.cod,
                         ch.name,
                         ch.class,
@@ -437,10 +452,18 @@ void printStats(stat_t s) {
                 s.spr);
 }
 
-void free_ch(nodeCh_t* head) {
+void free_ch(ch_t ch) {
+    free(ch.equip);
+}
+
+void free_chList(nodeCh_t* head) {
     if(head == NULL)
         return;
-    free_ch(head->next);
-    free(head->ch.equip);
+    free_chList(head->next);
+    free_ch(head->ch);
     free(head);
+}
+
+int ch_isvoid(ch_t ch) {
+    return ch.cod < 0;
 }

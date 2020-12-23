@@ -3,7 +3,41 @@
 
 #include "inv.h"
 
-static int real_stat(int val, int soglia);
+/**
+ * La funzione, data una struttura di tipo stat_t, restituisce un'altra struttura dello stesso tipo non contenente statistiche negative. 
+ */ 
+static stat_t real_stats(stat_t statp) {
+    if(statp.hp <= 0) statp.hp = 1;
+    if(statp.mp <= 0) statp.mp = 1;
+    if(statp.atk <= 0) statp.atk = 1;
+    if(statp.def <= 0) statp.def = 1;
+    if(statp.mag <= 0) statp.mag = 1;
+    if(statp.spr <= 0) statp.spr = 1;
+    return statp;
+}
+
+/**
+ * Date due strutture stat_t, la funzione restituisce la somma delle loro statistiche
+ */ 
+stat_t stat_sum(stat_t s1, stat_t s2)  {
+    stat_t s;
+    s.atk = s1.atk + s2.atk;
+    s.def = s1.def + s2.def;
+    s.hp = s1.hp + s2.hp;
+    s.mag = s1.mag + s2.mag;
+    s.mp = s1.mp + s2.mp;
+    s.spr = s1.spr + s2.spr;
+    return s;
+}
+
+/**
+ * La funzione genera una struttura di tipo stat_t vuota
+ */ 
+stat_t empty_stats() {
+    stat_t s;
+    s.atk = s.def = s.hp = s.mag = s.mp = s.spr = 0;
+    return s;
+}
 
 int stat_read(FILE *fp, stat_t *statp) {
     int res = fscanf(fp, "%d %d %d %d %d %d",
@@ -18,12 +52,12 @@ int stat_read(FILE *fp, stat_t *statp) {
 
 void stat_print(FILE *fp, stat_t *statp, int soglia) {
     stat_t to_print;
-    to_print.hp = real_stat(statp->hp, soglia);
-    to_print.mp = real_stat(statp->mp, soglia);
-    to_print.atk = real_stat(statp->atk, soglia);
-    to_print.def = real_stat(statp->def, soglia);
-    to_print.mag = real_stat(statp->mag, soglia);
-    to_print.spr = real_stat(statp->spr, soglia);
+    
+    //In base al valore della booleana soglia, vengono stampate statistiche negative o  no
+    if(soglia)
+        to_print = real_stats(*statp);
+    else
+        to_print = *statp;
 
     fprintf(fp, "%d %d %d %d %d %d",
                 to_print.hp,
@@ -42,19 +76,10 @@ void inv_read(FILE *fp, inv_t *invp) {
 
 void inv_print(FILE *fp, inv_t *invp) {
     fprintf(fp, "%s %s ", invp->nome, invp->tipo);
-    stat_print(fp, &invp->stat, 9999);
+    stat_print(fp, &invp->stat, 0);
     printf("\n");
 }
 
 stat_t inv_getStat(inv_t *invp) {
     return invp->stat;
-}
-
-/* Dato il valore di una statistica, restituisce il valore effettivo da stampare */
-static int real_stat(int val, int soglia) {
-    if(val < 0)
-        return 1;
-    if(val > soglia)
-        return soglia;
-    return val;
 }

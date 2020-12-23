@@ -47,6 +47,9 @@ int main() {
     return 0;
 }
 
+/**
+ * La funzione legge da file i dati di tutte le tessere inseribili
+ */ 
 tile_t* getTiles(int* n_tiles) {
     FILE* fp = fopen(TILES_FILE, "r");
     if(!fp)
@@ -61,6 +64,10 @@ tile_t* getTiles(int* n_tiles) {
     return tiles;
 }
 
+/**
+ * La funzione genera la board iniziale, leggendo da file.
+ * Tutte le tessere lette vengono marcate come utilizzate (valore 1 nel vettore mark), in modo da non poterle inserire due volte durante l'esplorazione delle soluzioni.
+ */ 
 btile_t** getBoard(tile_t* tiles, int* mark, int* R, int* C) {
     FILE* fp = fopen(BOARD_FILE, "r");
     if(!fp)
@@ -75,6 +82,7 @@ btile_t** getBoard(tile_t* tiles, int* mark, int* R, int* C) {
         board[i] = (btile_t*)malloc(*C*sizeof(btile_t));
         for(int j=0; j<*C; j++) {
             fscanf(fp, "%d/%d", &board[i][j].t_i, &board[i][j].r);
+            //Marca la tessera come utilizzata se la piastrella corrente non è vuota
             if(board[i][j].t_i != -1)
                 mark[board[i][j].t_i] = 1;
         }
@@ -83,6 +91,9 @@ btile_t** getBoard(tile_t* tiles, int* mark, int* R, int* C) {
     return board;
 }
 
+/**
+ * Funzione wrapper che stampa la configurazione avente punteggio massimo
+ */ 
 void getMax(tile_t* tiles, btile_t** board, int* mark, int n_tiles, int R, int C) {
     //board_max alloc
     btile_t** board_max = (btile_t**)malloc(R*sizeof(btile_t*));
@@ -101,6 +112,9 @@ void getMax(tile_t* tiles, btile_t** board, int* mark, int n_tiles, int R, int C
     free2d(board_max, R);
 }
 
+/**
+ * Funzione che esplora ricorsivamente tutte le possibili configurazioni (usando il modello delle disposizioni semplici) e salva in board_max quella massima.
+ */
 void getMax_R(int r, int c, tile_t* tiles, btile_t** board, int* mark, btile_t** board_max, int* max_score, int n_tiles, int R, int C) {
     if(r>=R) {
         c++;
@@ -137,16 +151,19 @@ void getMax_R(int r, int c, tile_t* tiles, btile_t** board, int* mark, btile_t**
     }
 }
 
+/**
+ * La funzione restituisce il punteggio totale di una board passata per parametro
+ */
 int getScore(btile_t** board, tile_t* tiles, int R, int C) {
-    int i, j, score_tmp, score=0;
+    int i, j, score_tmp, score=0; /* score immagazzina il punteggio totale, score_tmp tiene conto del punteggio temporaneamente durante la scannerizzazione delle piastrelle */
     tube_t current, prev;
     tile_t first;
 
-    //Calcolo punteggio per righe
+    //CALCOLO PUNTEGGIO PER RIGHE
     for(i=0; i<R; i++) {
         //Inizializza score_tmp al valore della casella alla prima colonna
         score_tmp = board[i][0].r ? tiles[board[i][0].t_i].v.val : tiles[board[i][0].t_i].h.val;
-        //Calcola il punteggio per ogni colonna
+        //Calcola il punteggio di ogni cella
         for(j=1; j<C; j++) {
             current = board[i][j].r ? tiles[board[i][j].t_i].v : tiles[board[i][j].t_i].h;
             prev = board[i][j-1].r ? tiles[board[i][j-1].t_i].v : tiles[board[i][j-1].t_i].h;
@@ -160,10 +177,11 @@ int getScore(btile_t** board, tile_t* tiles, int R, int C) {
         score+=score_tmp;
     }
 
-    //Calcolo punteggio per righe
+    //CALCOLO PUNTEGGIO PER COLONNE
     for(j=0; j<C; j++) {
         //Inizializza score_tmp al valore della casella alla prima riga
         score_tmp = board[0][j].r ? tiles[board[0][j].t_i].h.val : tiles[board[0][j].t_i].v.val;
+        //Calcola il punteggio di ogni cella
         for(i=1; i<R; i++) {
             current = board[i][j].r ? tiles[board[i][j].t_i].h : tiles[board[i][j].t_i].v;
             prev = board[i-1][j].r ? tiles[board[i-1][j].t_i].h : tiles[board[i-1][j].t_i].v;

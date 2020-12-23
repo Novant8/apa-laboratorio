@@ -33,4 +33,10 @@ stat_t inv_getStat(inv_t *invp);
 
 /* Si possono aggiungere altre funzioni se ritenute necessarie */
 
+/* generazione di una struttura vuota di statistiche */
+stat_t empty_stats();
+
+/* somma tra due strutture di statistiche */
+stat_t stat_sum(stat_t s1, stat_t s2);
+
 #endif

@@ -39,11 +39,14 @@ static pgLink_t pgNode_new(pg_t pg, pgLink_t next) {
     pgLink_t n = (pgLink_t)malloc(sizeof(pgNode_t));
     n->pg = pg;
     n->pg.equip = equipArray_init();
+    n->pg.eq_stat = empty_stats();
     n->next = next;
     return n;
 }
 
-/* IUNSERIMENTO IN CODA */
+/**
+ * La funzione effettua un inserimento IN CODA alla lista
+ */ 
 void pgList_insert(pgList_t pgList, pg_t pg) {
     pgLink_t n = pgNode_new(pg, NULL);
     if(pgList->head == NULL)
@@ -74,10 +77,13 @@ pg_t *pgList_searchByCode(pgList_t pgList, char* cod) {
 void pgList_free(pgList_t pgList) {
     if(pgList == NULL)
         return;
-    if(pgList->head == NULL)
+    if(pgList->head == NULL) {
         free(pgList);
+        return;
+    }
     pgLink_t n = pgList->head;
-    pgList->head = pgList->head->next;
+    equipArray_free(n->pg.equip);
+    pgList->head = n->next;
     free(n);
     pgList_free(pgList);
 }

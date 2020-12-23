@@ -22,7 +22,7 @@ int readCh_all(tabCh_t* tabch) {
         return 0;
 
     ch_t ch_tmp;
-    while((ch_tmp = readCh(fp)).cod!=-1) { //Se è stato letto un personaggio valido
+    while(!ch_isvoid(ch_tmp = readCh(fp))) { //Se è stato letto un personaggio valido
         addCh_list(ch_tmp, tabch);
         tabch->nCh++;
     }
@@ -54,21 +54,26 @@ nodeCh_t* new_nodeCh(ch_t ch, nodeCh_t* next) {
 }
 
 /**
- * La funzione rimuove un personaggio identificato dal codice cod dalla lista
+ * La funzione estrae un personaggio identificato dal codice cod dalla lista
  * Return:
- * - 1 se il personaggio è stato cancellato
- * - 0 se non è stato trovato un personaggio avente codice cod
+ * - dati del personaggio estratto
+ * - un personaggio avente codice negativo se non è stato trovato
  */ 
-int delCh_list(int cod, tabCh_t* tabch)  {
-    nodeCh_t *n, *tmp;
-    for(n=tabch->headCh; n->next != NULL; n=n->next)
-        if(n->next->ch.cod == cod) {
-            tmp = n->next;
-            n->next = n->next->next;
-            free(tmp);
-            return 1;
+ch_t delCh_list(int cod, tabCh_t* tabch)  {
+    ch_t ext;
+    ext.cod = -1;
+    nodeCh_t *n, *p;
+    for(n = tabch->headCh, p = NULL; n != NULL; p = n, n=n->next)
+        if(n->ch.cod == cod) {
+            if(p==NULL)
+                tabch->headCh = n->next;
+            else
+                p->next = n->next;
+            ext = n->ch;
+            free(n);
+            break;
         }
-    return 0;
+    return ext;
 }
 
 stat_t statsSum(stat_t s1, stat_t s2) {
@@ -138,7 +143,7 @@ void printEquipment(ch_t ch) {
  */ 
 ch_t readCh(FILE* fp) {
     ch_t ch;
-    int res = fscanf(fp, "PG%d %s %s %d %d %d %d %d %d\n",
+    int res = fscanf(fp, "\nPG%d %s %s %d %d %d %d %d %d",
                         &ch.cod,
                         ch.name,
                         ch.class,
@@ -162,11 +167,9 @@ ch_t readCh(FILE* fp) {
  * La funzione aggiunge l'oggetto puntato da item nell'inventario del personaggio puntato da ch
  */ 
 int equipItem(inv_t* item, ch_t* ch) {
-    int n_items = ch->equip->inUse;
-    if(n_items >= MAX_INV)
+    if(ch->equip->inUse >= MAX_INV)
         return 0;
-    ch->equip->arrEq[n_items] = item;
-    ch->equip->inUse++;
+    ch->equip->arrEq[ch->equip->inUse++] = item;
     return 1;
 }
 
@@ -175,27 +178,31 @@ int equipItem(inv_t* item, ch_t* ch) {
  */ 
 int removeItem(inv_t* item, ch_t* ch) {
     int n_items = ch->equip->inUse;
-    if(n_items >= MAX_INV)
-        return 0;
     
-    int i,j;
-    /* Ricerca dell'indice dell'array contenente il puntatore item */
+    int i,j, found = 0;
+    inv_t* tmp;
+    /* Scannerizza l'array e porta l'oggetto da rimuovere al fondo */
     for(int i=0; i<n_items; i++)
-        if(ch->equip->arrEq+i == item) {
-            /* Shift a sinistra di uno dell'array equipaggiamento, solo per gli indici maggiori di quello da rimuovere */
-            for(j=i; j<n_items-1; j++)
-                ch->equip->arrEq[i] = ch->equip->arrEq[i+1];
-            break;
+        if(ch->equip->arrEq[i] == item) {
+            found = 1;
+            tmp = ch->equip->arrEq[i];
+            ch->equip->arrEq[i] = ch->equip->arrEq[i+1];
+            ch->equip->arrEq[i+1] = tmp;
         }
-    ch->equip->inUse--;
-    return 1;
+    if(found)
+        ch->equip->inUse--;
+    return found;
 }
 
-void free_ch(nodeCh_t* head) {
+void free_ch(ch_t ch) {
+    free(ch.equip);
+}
+
+void free_chList(nodeCh_t* head) {
     if(head == NULL)
         return;
-    free_ch(head->next);
-    free(head->ch.equip);
+    free_chList(head->next);
+    free_ch(head->ch);
     free(head);
 }
 
@@ -205,4 +212,8 @@ ch_t* searchCh(int cod, nodeCh_t* head) {
     if(head->ch.cod == cod)
         return &head->ch;
     return searchCh(cod, head->next);
+}
+
+int ch_isvoid(ch_t ch) {
+    return ch.cod < 0;
 }

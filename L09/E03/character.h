@@ -27,7 +27,7 @@ typedef struct {
 
 int readCh_all(tabCh_t* tabch); //Acquisizione da file (più personaggi)
 void addCh_list(ch_t ch, tabCh_t* tabch); //Inserimento
-int delCh_list(int cod, tabCh_t* tabch); //Eliminazione
+ch_t delCh_list(int cod, tabCh_t* tabch); //Estrazione personaggio
 void printChStats(ch_t* ch); //Stampa dettagli
 ch_t readCh(FILE* fp); //Acquisizione da file (un personaggio)
 //void printCh(ch_t ch);
@@ -35,6 +35,8 @@ int equipItem(inv_t* item, ch_t* ch); //Aggiunta a equipaggiamento
 int removeItem(inv_t* item, ch_t* ch); //Rimozione da equipaggiamento
 //void printEquipment(ch_t ch);
 ch_t* searchCh(int cod, nodeCh_t* head); //Ricerca personaggio per codice
-void free_ch(nodeCh_t* head); //Deallocazione da memoria
+int ch_isvoid(ch_t ch);
+void free_ch(ch_t ch);
+void free_chList(nodeCh_t* head); //Deallocazione da memoria
 
 #endif
