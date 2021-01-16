@@ -1,0 +1,1717 @@
+Inserire difficoltà massima diagonale: Inserire difficoltà massima programma: { ruota }
+{ ruota back_handspring }
+{ ruota back_handspring back_handspring }
+{ ruota back_handspring back_handspring back_handspring }
+{ ruota back_handspring back_handspring back_handspring back_handspring }
+{ ruota back_handspring back_handspring back_handspring back_tuck }
+{ ruota back_handspring back_handspring back_handspring back_pike }
+{ ruota back_handspring back_handspring back_handspring back_layout }
+{ ruota back_handspring back_handspring back_handspring arabian }
+{ ruota back_handspring back_handspring back_tuck }
+{ ruota back_handspring back_handspring back_tuck back_handspring }
+{ ruota back_handspring back_handspring back_tuck back_tuck }
+{ ruota back_handspring back_handspring back_tuck back_pike }
+{ ruota back_handspring back_handspring back_tuck arabian }
+{ ruota back_handspring back_handspring back_pike }
+{ ruota back_handspring back_handspring back_pike back_handspring }
+{ ruota back_handspring back_handspring back_pike back_tuck }
+{ ruota back_handspring back_handspring back_layout }
+{ ruota back_handspring back_handspring back_layout back_handspring }
+{ ruota back_handspring back_handspring double_back_tuck }
+{ ruota back_handspring back_handspring double_back_layout }
+{ ruota back_handspring back_handspring arabian }
+{ ruota back_handspring back_handspring arabian ruota }
+{ ruota back_handspring back_handspring arabian rondata }
+{ ruota back_handspring back_handspring arabian ribaltata_a_2 }
+{ ruota back_handspring back_handspring arabian front_tuck }
+{ ruota back_handspring back_tuck }
+{ ruota back_handspring back_tuck back_handspring }
+{ ruota back_handspring back_tuck back_handspring back_handspring }
+{ ruota back_handspring back_tuck back_handspring back_tuck }
+{ ruota back_handspring back_tuck back_handspring back_pike }
+{ ruota back_handspring back_tuck back_handspring arabian }
+{ ruota back_handspring back_tuck back_tuck }
+{ ruota back_handspring back_tuck back_tuck back_handspring }
+{ ruota back_handspring back_tuck back_tuck back_tuck }
+{ ruota back_handspring back_tuck back_pike }
+{ ruota back_handspring back_tuck back_pike back_handspring }
+{ ruota back_handspring back_tuck back_layout }
+{ ruota back_handspring back_tuck double_back_tuck }
+{ ruota back_handspring back_tuck arabian }
+{ ruota back_handspring back_tuck arabian ruota }
+{ ruota back_handspring back_tuck arabian rondata }
+{ ruota back_handspring back_tuck arabian ribaltata_a_2 }
+{ ruota back_handspring back_pike }
+{ ruota back_handspring back_pike back_handspring }
+{ ruota back_handspring back_pike back_handspring back_handspring }
+{ ruota back_handspring back_pike back_handspring back_tuck }
+{ ruota back_handspring back_pike back_tuck }
+{ ruota back_handspring back_pike back_tuck back_handspring }
+{ ruota back_handspring back_pike back_pike }
+{ ruota back_handspring back_pike back_layout }
+{ ruota back_handspring back_pike arabian }
+{ ruota back_handspring back_pike arabian ruota }
+{ ruota back_handspring back_pike arabian rondata }
+{ ruota back_handspring back_layout }
+{ ruota back_handspring back_layout back_handspring }
+{ ruota back_handspring back_layout back_handspring back_handspring }
+{ ruota back_handspring back_layout back_tuck }
+{ ruota back_handspring back_layout back_pike }
+{ ruota back_handspring back_layout arabian }
+{ ruota back_handspring double_back_tuck }
+{ ruota back_handspring double_back_tuck back_handspring }
+{ ruota back_handspring double_back_tuck back_tuck }
+{ ruota back_handspring double_back_layout }
+{ ruota back_handspring triple_back_tuck }
+{ ruota back_handspring back_layout_double_twist }
+{ ruota back_handspring arabian }
+{ ruota back_handspring arabian ruota }
+{ ruota back_handspring arabian ruota back_handspring }
+{ ruota back_handspring arabian ruota back_tuck }
+{ ruota back_handspring arabian ruota back_pike }
+{ ruota back_handspring arabian ruota arabian }
+{ ruota back_handspring arabian rondata }
+{ ruota back_handspring arabian rondata back_handspring }
+{ ruota back_handspring arabian rondata back_tuck }
+{ ruota back_handspring arabian rondata back_pike }
+{ ruota back_handspring arabian rondata arabian }
+{ ruota back_handspring arabian ribaltata_a_2 }
+{ ruota back_handspring arabian ribaltata_a_2 ruota }
+{ ruota back_handspring arabian ribaltata_a_2 rondata }
+{ ruota back_handspring arabian ribaltata_a_2 ribaltata_a_2 }
+{ ruota back_handspring arabian ribaltata_a_2 front_tuck }
+{ ruota back_handspring arabian front_tuck }
+{ ruota back_handspring arabian front_tuck ruota }
+{ ruota back_handspring arabian front_tuck rondata }
+{ ruota back_handspring arabian front_tuck ribaltata_a_2 }
+{ ruota back_handspring arabian front_pike }
+{ ruota back_handspring arabian front_pike ruota }
+{ ruota back_handspring arabian front_pike rondata }
+{ ruota back_handspring arabian front_layout }
+{ ruota back_tuck }
+{ ruota back_tuck back_handspring }
+{ ruota back_tuck back_handspring back_handspring }
+{ ruota back_tuck back_handspring back_handspring back_handspring }
+{ ruota back_tuck back_handspring back_handspring back_tuck }
+{ ruota back_tuck back_handspring back_handspring back_pike }
+{ ruota back_tuck back_handspring back_handspring arabian }
+{ ruota back_tuck back_handspring back_tuck }
+{ ruota back_tuck back_handspring back_tuck back_handspring }
+{ ruota back_tuck back_handspring back_tuck back_tuck }
+{ ruota back_tuck back_handspring back_pike }
+{ ruota back_tuck back_handspring back_pike back_handspring }
+{ ruota back_tuck back_handspring back_layout }
+{ ruota back_tuck back_handspring double_back_tuck }
+{ ruota back_tuck back_handspring arabian }
+{ ruota back_tuck back_handspring arabian ruota }
+{ ruota back_tuck back_handspring arabian rondata }
+{ ruota back_tuck back_handspring arabian ribaltata_a_2 }
+{ ruota back_tuck back_tuck }
+{ ruota back_tuck back_tuck back_handspring }
+{ ruota back_tuck back_tuck back_handspring back_handspring }
+{ ruota back_tuck back_tuck back_handspring back_tuck }
+{ ruota back_tuck back_tuck back_tuck }
+{ ruota back_tuck back_tuck back_tuck back_handspring }
+{ ruota back_tuck back_tuck back_pike }
+{ ruota back_tuck back_tuck back_layout }
+{ ruota back_tuck back_tuck arabian }
+{ ruota back_tuck back_tuck arabian ruota }
+{ ruota back_tuck back_tuck arabian rondata }
+{ ruota back_tuck back_pike }
+{ ruota back_tuck back_pike back_handspring }
+{ ruota back_tuck back_pike back_handspring back_handspring }
+{ ruota back_tuck back_pike back_tuck }
+{ ruota back_tuck back_pike back_pike }
+{ ruota back_tuck back_pike arabian }
+{ ruota back_tuck back_layout }
+{ ruota back_tuck back_layout back_handspring }
+{ ruota back_tuck back_layout back_tuck }
+{ ruota back_tuck double_back_tuck }
+{ ruota back_tuck double_back_tuck back_handspring }
+{ ruota back_tuck double_back_layout }
+{ ruota back_tuck triple_back_tuck }
+{ ruota back_tuck arabian }
+{ ruota back_tuck arabian ruota }
+{ ruota back_tuck arabian ruota back_handspring }
+{ ruota back_tuck arabian ruota back_tuck }
+{ ruota back_tuck arabian rondata }
+{ ruota back_tuck arabian rondata back_handspring }
+{ ruota back_tuck arabian rondata back_tuck }
+{ ruota back_tuck arabian ribaltata_a_2 }
+{ ruota back_tuck arabian ribaltata_a_2 ruota }
+{ ruota back_tuck arabian ribaltata_a_2 rondata }
+{ ruota back_tuck arabian ribaltata_a_2 ribaltata_a_2 }
+{ ruota back_tuck arabian front_tuck }
+{ ruota back_tuck arabian front_tuck ruota }
+{ ruota back_tuck arabian front_tuck rondata }
+{ ruota back_tuck arabian front_pike }
+{ ruota back_pike }
+{ ruota back_pike back_handspring }
+{ ruota back_pike back_handspring back_handspring }
+{ ruota back_pike back_handspring back_handspring back_handspring }
+{ ruota back_pike back_handspring back_handspring back_tuck }
+{ ruota back_pike back_handspring back_tuck }
+{ ruota back_pike back_handspring back_tuck back_handspring }
+{ ruota back_pike back_handspring back_pike }
+{ ruota back_pike back_handspring back_layout }
+{ ruota back_pike back_handspring arabian }
+{ ruota back_pike back_handspring arabian ruota }
+{ ruota back_pike back_handspring arabian rondata }
+{ ruota back_pike back_tuck }
+{ ruota back_pike back_tuck back_handspring }
+{ ruota back_pike back_tuck back_handspring back_handspring }
+{ ruota back_pike back_tuck back_tuck }
+{ ruota back_pike back_tuck back_pike }
+{ ruota back_pike back_tuck arabian }
+{ ruota back_pike back_pike }
+{ ruota back_pike back_pike back_handspring }
+{ ruota back_pike back_pike back_tuck }
+{ ruota back_pike back_layout }
+{ ruota back_pike back_layout back_handspring }
+{ ruota back_pike double_back_tuck }
+{ ruota back_pike double_back_layout }
+{ ruota back_pike arabian }
+{ ruota back_pike arabian ruota }
+{ ruota back_pike arabian ruota back_handspring }
+{ ruota back_pike arabian rondata }
+{ ruota back_pike arabian rondata back_handspring }
+{ ruota back_pike arabian ribaltata_a_2 }
+{ ruota back_pike arabian ribaltata_a_2 ruota }
+{ ruota back_pike arabian ribaltata_a_2 rondata }
+{ ruota back_pike arabian front_tuck }
+{ ruota back_layout }
+{ ruota back_layout back_handspring }
+{ ruota back_layout back_handspring back_handspring }
+{ ruota back_layout back_handspring back_handspring back_handspring }
+{ ruota back_layout back_handspring back_tuck }
+{ ruota back_layout back_handspring back_pike }
+{ ruota back_layout back_handspring arabian }
+{ ruota back_layout back_tuck }
+{ ruota back_layout back_tuck back_handspring }
+{ ruota back_layout back_tuck back_tuck }
+{ ruota back_layout back_pike }
+{ ruota back_layout back_pike back_handspring }
+{ ruota back_layout back_layout }
+{ ruota back_layout double_back_tuck }
+{ ruota back_layout arabian }
+{ ruota back_layout arabian ruota }
+{ ruota back_layout arabian rondata }
+{ ruota back_layout arabian ribaltata_a_2 }
+{ ruota double_back_tuck }
+{ ruota double_back_tuck back_handspring }
+{ ruota double_back_tuck back_handspring back_handspring }
+{ ruota double_back_tuck back_handspring back_tuck }
+{ ruota double_back_tuck back_tuck }
+{ ruota double_back_tuck back_tuck back_handspring }
+{ ruota double_back_tuck back_pike }
+{ ruota double_back_tuck back_layout }
+{ ruota double_back_tuck arabian }
+{ ruota double_back_tuck arabian ruota }
+{ ruota double_back_tuck arabian rondata }
+{ ruota double_back_layout }
+{ ruota triple_back_tuck }
+{ ruota back_layout_double_twist }
+{ ruota back_layout_double_twist back_handspring }
+{ ruota back_layout_quad_twist }
+{ ruota arabian }
+{ ruota arabian ruota }
+{ ruota arabian ruota back_handspring }
+{ ruota arabian ruota back_handspring back_handspring }
+{ ruota arabian ruota back_handspring back_tuck }
+{ ruota arabian ruota back_handspring back_pike }
+{ ruota arabian ruota back_handspring arabian }
+{ ruota arabian ruota back_tuck }
+{ ruota arabian ruota back_tuck back_handspring }
+{ ruota arabian ruota back_tuck back_tuck }
+{ ruota arabian ruota back_pike }
+{ ruota arabian ruota back_pike back_handspring }
+{ ruota arabian ruota back_layout }
+{ ruota arabian ruota double_back_tuck }
+{ ruota arabian ruota arabian }
+{ ruota arabian ruota arabian ruota }
+{ ruota arabian ruota arabian rondata }
+{ ruota arabian ruota arabian ribaltata_a_2 }
+{ ruota arabian rondata }
+{ ruota arabian rondata back_handspring }
+{ ruota arabian rondata back_handspring back_handspring }
+{ ruota arabian rondata back_handspring back_tuck }
+{ ruota arabian rondata back_handspring back_pike }
+{ ruota arabian rondata back_handspring arabian }
+{ ruota arabian rondata back_tuck }
+{ ruota arabian rondata back_tuck back_handspring }
+{ ruota arabian rondata back_tuck back_tuck }
+{ ruota arabian rondata back_pike }
+{ ruota arabian rondata back_pike back_handspring }
+{ ruota arabian rondata back_layout }
+{ ruota arabian rondata double_back_tuck }
+{ ruota arabian rondata arabian }
+{ ruota arabian rondata arabian ruota }
+{ ruota arabian rondata arabian rondata }
+{ ruota arabian rondata arabian ribaltata_a_2 }
+{ ruota arabian ribaltata_a_2 }
+{ ruota arabian ribaltata_a_2 ruota }
+{ ruota arabian ribaltata_a_2 ruota back_handspring }
+{ ruota arabian ribaltata_a_2 ruota back_tuck }
+{ ruota arabian ribaltata_a_2 ruota back_pike }
+{ ruota arabian ribaltata_a_2 ruota arabian }
+{ ruota arabian ribaltata_a_2 rondata }
+{ ruota arabian ribaltata_a_2 rondata back_handspring }
+{ ruota arabian ribaltata_a_2 rondata back_tuck }
+{ ruota arabian ribaltata_a_2 rondata back_pike }
+{ ruota arabian ribaltata_a_2 rondata arabian }
+{ ruota arabian ribaltata_a_2 ribaltata_a_2 }
+{ ruota arabian ribaltata_a_2 ribaltata_a_2 ruota }
+{ ruota arabian ribaltata_a_2 ribaltata_a_2 rondata }
+{ ruota arabian ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ ruota arabian ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ ruota arabian ribaltata_a_2 front_tuck }
+{ ruota arabian ribaltata_a_2 front_tuck ruota }
+{ ruota arabian ribaltata_a_2 front_tuck rondata }
+{ ruota arabian ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ ruota arabian ribaltata_a_2 front_pike }
+{ ruota arabian ribaltata_a_2 front_pike ruota }
+{ ruota arabian ribaltata_a_2 front_pike rondata }
+{ ruota arabian ribaltata_a_2 front_layout }
+{ ruota arabian front_tuck }
+{ ruota arabian front_tuck ruota }
+{ ruota arabian front_tuck ruota back_handspring }
+{ ruota arabian front_tuck ruota back_tuck }
+{ ruota arabian front_tuck rondata }
+{ ruota arabian front_tuck rondata back_handspring }
+{ ruota arabian front_tuck rondata back_tuck }
+{ ruota arabian front_tuck ribaltata_a_2 }
+{ ruota arabian front_tuck ribaltata_a_2 ruota }
+{ ruota arabian front_tuck ribaltata_a_2 rondata }
+{ ruota arabian front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ ruota arabian front_tuck front_tuck }
+{ ruota arabian front_tuck front_tuck ruota }
+{ ruota arabian front_tuck front_tuck rondata }
+{ ruota arabian front_tuck front_pike }
+{ ruota arabian front_pike }
+{ ruota arabian front_pike ruota }
+{ ruota arabian front_pike ruota back_handspring }
+{ ruota arabian front_pike rondata }
+{ ruota arabian front_pike rondata back_handspring }
+{ ruota arabian front_pike ribaltata_a_2 }
+{ ruota arabian front_pike ribaltata_a_2 ruota }
+{ ruota arabian front_pike ribaltata_a_2 rondata }
+{ ruota arabian front_pike front_tuck }
+{ ruota arabian front_layout }
+{ ruota arabian front_layout ruota }
+{ ruota arabian front_layout rondata }
+{ ruota arabian front_layout ribaltata_a_2 }
+{ ruota arabian double_front_tuck }
+{ ruota arabian double_front_tuck ruota }
+{ ruota arabian double_front_tuck rondata }
+{ ruota arabian double_front_layout }
+{ rondata }
+{ rondata back_handspring }
+{ rondata back_handspring back_handspring }
+{ rondata back_handspring back_handspring back_handspring }
+{ rondata back_handspring back_handspring back_handspring back_handspring }
+{ rondata back_handspring back_handspring back_handspring back_tuck }
+{ rondata back_handspring back_handspring back_handspring back_pike }
+{ rondata back_handspring back_handspring back_handspring back_layout }
+{ rondata back_handspring back_handspring back_handspring arabian }
+{ rondata back_handspring back_handspring back_tuck }
+{ rondata back_handspring back_handspring back_tuck back_handspring }
+{ rondata back_handspring back_handspring back_tuck back_tuck }
+{ rondata back_handspring back_handspring back_tuck back_pike }
+{ rondata back_handspring back_handspring back_tuck arabian }
+{ rondata back_handspring back_handspring back_pike }
+{ rondata back_handspring back_handspring back_pike back_handspring }
+{ rondata back_handspring back_handspring back_pike back_tuck }
+{ rondata back_handspring back_handspring back_layout }
+{ rondata back_handspring back_handspring back_layout back_handspring }
+{ rondata back_handspring back_handspring double_back_tuck }
+{ rondata back_handspring back_handspring double_back_layout }
+{ rondata back_handspring back_handspring arabian }
+{ rondata back_handspring back_handspring arabian ruota }
+{ rondata back_handspring back_handspring arabian rondata }
+{ rondata back_handspring back_handspring arabian ribaltata_a_2 }
+{ rondata back_handspring back_handspring arabian front_tuck }
+{ rondata back_handspring back_tuck }
+{ rondata back_handspring back_tuck back_handspring }
+{ rondata back_handspring back_tuck back_handspring back_handspring }
+{ rondata back_handspring back_tuck back_handspring back_tuck }
+{ rondata back_handspring back_tuck back_handspring back_pike }
+{ rondata back_handspring back_tuck back_handspring arabian }
+{ rondata back_handspring back_tuck back_tuck }
+{ rondata back_handspring back_tuck back_tuck back_handspring }
+{ rondata back_handspring back_tuck back_tuck back_tuck }
+{ rondata back_handspring back_tuck back_pike }
+{ rondata back_handspring back_tuck back_pike back_handspring }
+{ rondata back_handspring back_tuck back_layout }
+{ rondata back_handspring back_tuck double_back_tuck }
+{ rondata back_handspring back_tuck arabian }
+{ rondata back_handspring back_tuck arabian ruota }
+{ rondata back_handspring back_tuck arabian rondata }
+{ rondata back_handspring back_tuck arabian ribaltata_a_2 }
+{ rondata back_handspring back_pike }
+{ rondata back_handspring back_pike back_handspring }
+{ rondata back_handspring back_pike back_handspring back_handspring }
+{ rondata back_handspring back_pike back_handspring back_tuck }
+{ rondata back_handspring back_pike back_tuck }
+{ rondata back_handspring back_pike back_tuck back_handspring }
+{ rondata back_handspring back_pike back_pike }
+{ rondata back_handspring back_pike back_layout }
+{ rondata back_handspring back_pike arabian }
+{ rondata back_handspring back_pike arabian ruota }
+{ rondata back_handspring back_pike arabian rondata }
+{ rondata back_handspring back_layout }
+{ rondata back_handspring back_layout back_handspring }
+{ rondata back_handspring back_layout back_handspring back_handspring }
+{ rondata back_handspring back_layout back_tuck }
+{ rondata back_handspring back_layout back_pike }
+{ rondata back_handspring back_layout arabian }
+{ rondata back_handspring double_back_tuck }
+{ rondata back_handspring double_back_tuck back_handspring }
+{ rondata back_handspring double_back_tuck back_tuck }
+{ rondata back_handspring double_back_layout }
+{ rondata back_handspring triple_back_tuck }
+{ rondata back_handspring back_layout_double_twist }
+{ rondata back_handspring arabian }
+{ rondata back_handspring arabian ruota }
+{ rondata back_handspring arabian ruota back_handspring }
+{ rondata back_handspring arabian ruota back_tuck }
+{ rondata back_handspring arabian ruota back_pike }
+{ rondata back_handspring arabian ruota arabian }
+{ rondata back_handspring arabian rondata }
+{ rondata back_handspring arabian rondata back_handspring }
+{ rondata back_handspring arabian rondata back_tuck }
+{ rondata back_handspring arabian rondata back_pike }
+{ rondata back_handspring arabian rondata arabian }
+{ rondata back_handspring arabian ribaltata_a_2 }
+{ rondata back_handspring arabian ribaltata_a_2 ruota }
+{ rondata back_handspring arabian ribaltata_a_2 rondata }
+{ rondata back_handspring arabian ribaltata_a_2 ribaltata_a_2 }
+{ rondata back_handspring arabian ribaltata_a_2 front_tuck }
+{ rondata back_handspring arabian front_tuck }
+{ rondata back_handspring arabian front_tuck ruota }
+{ rondata back_handspring arabian front_tuck rondata }
+{ rondata back_handspring arabian front_tuck ribaltata_a_2 }
+{ rondata back_handspring arabian front_pike }
+{ rondata back_handspring arabian front_pike ruota }
+{ rondata back_handspring arabian front_pike rondata }
+{ rondata back_handspring arabian front_layout }
+{ rondata back_tuck }
+{ rondata back_tuck back_handspring }
+{ rondata back_tuck back_handspring back_handspring }
+{ rondata back_tuck back_handspring back_handspring back_handspring }
+{ rondata back_tuck back_handspring back_handspring back_tuck }
+{ rondata back_tuck back_handspring back_handspring back_pike }
+{ rondata back_tuck back_handspring back_handspring arabian }
+{ rondata back_tuck back_handspring back_tuck }
+{ rondata back_tuck back_handspring back_tuck back_handspring }
+{ rondata back_tuck back_handspring back_tuck back_tuck }
+{ rondata back_tuck back_handspring back_pike }
+{ rondata back_tuck back_handspring back_pike back_handspring }
+{ rondata back_tuck back_handspring back_layout }
+{ rondata back_tuck back_handspring double_back_tuck }
+{ rondata back_tuck back_handspring arabian }
+{ rondata back_tuck back_handspring arabian ruota }
+{ rondata back_tuck back_handspring arabian rondata }
+{ rondata back_tuck back_handspring arabian ribaltata_a_2 }
+{ rondata back_tuck back_tuck }
+{ rondata back_tuck back_tuck back_handspring }
+{ rondata back_tuck back_tuck back_handspring back_handspring }
+{ rondata back_tuck back_tuck back_handspring back_tuck }
+{ rondata back_tuck back_tuck back_tuck }
+{ rondata back_tuck back_tuck back_tuck back_handspring }
+{ rondata back_tuck back_tuck back_pike }
+{ rondata back_tuck back_tuck back_layout }
+{ rondata back_tuck back_tuck arabian }
+{ rondata back_tuck back_tuck arabian ruota }
+{ rondata back_tuck back_tuck arabian rondata }
+{ rondata back_tuck back_pike }
+{ rondata back_tuck back_pike back_handspring }
+{ rondata back_tuck back_pike back_handspring back_handspring }
+{ rondata back_tuck back_pike back_tuck }
+{ rondata back_tuck back_pike back_pike }
+{ rondata back_tuck back_pike arabian }
+{ rondata back_tuck back_layout }
+{ rondata back_tuck back_layout back_handspring }
+{ rondata back_tuck back_layout back_tuck }
+{ rondata back_tuck double_back_tuck }
+{ rondata back_tuck double_back_tuck back_handspring }
+{ rondata back_tuck double_back_layout }
+{ rondata back_tuck triple_back_tuck }
+{ rondata back_tuck arabian }
+{ rondata back_tuck arabian ruota }
+{ rondata back_tuck arabian ruota back_handspring }
+{ rondata back_tuck arabian ruota back_tuck }
+{ rondata back_tuck arabian rondata }
+{ rondata back_tuck arabian rondata back_handspring }
+{ rondata back_tuck arabian rondata back_tuck }
+{ rondata back_tuck arabian ribaltata_a_2 }
+{ rondata back_tuck arabian ribaltata_a_2 ruota }
+{ rondata back_tuck arabian ribaltata_a_2 rondata }
+{ rondata back_tuck arabian ribaltata_a_2 ribaltata_a_2 }
+{ rondata back_tuck arabian front_tuck }
+{ rondata back_tuck arabian front_tuck ruota }
+{ rondata back_tuck arabian front_tuck rondata }
+{ rondata back_tuck arabian front_pike }
+{ rondata back_pike }
+{ rondata back_pike back_handspring }
+{ rondata back_pike back_handspring back_handspring }
+{ rondata back_pike back_handspring back_handspring back_handspring }
+{ rondata back_pike back_handspring back_handspring back_tuck }
+{ rondata back_pike back_handspring back_tuck }
+{ rondata back_pike back_handspring back_tuck back_handspring }
+{ rondata back_pike back_handspring back_pike }
+{ rondata back_pike back_handspring back_layout }
+{ rondata back_pike back_handspring arabian }
+{ rondata back_pike back_handspring arabian ruota }
+{ rondata back_pike back_handspring arabian rondata }
+{ rondata back_pike back_tuck }
+{ rondata back_pike back_tuck back_handspring }
+{ rondata back_pike back_tuck back_handspring back_handspring }
+{ rondata back_pike back_tuck back_tuck }
+{ rondata back_pike back_tuck back_pike }
+{ rondata back_pike back_tuck arabian }
+{ rondata back_pike back_pike }
+{ rondata back_pike back_pike back_handspring }
+{ rondata back_pike back_pike back_tuck }
+{ rondata back_pike back_layout }
+{ rondata back_pike back_layout back_handspring }
+{ rondata back_pike double_back_tuck }
+{ rondata back_pike double_back_layout }
+{ rondata back_pike arabian }
+{ rondata back_pike arabian ruota }
+{ rondata back_pike arabian ruota back_handspring }
+{ rondata back_pike arabian rondata }
+{ rondata back_pike arabian rondata back_handspring }
+{ rondata back_pike arabian ribaltata_a_2 }
+{ rondata back_pike arabian ribaltata_a_2 ruota }
+{ rondata back_pike arabian ribaltata_a_2 rondata }
+{ rondata back_pike arabian front_tuck }
+{ rondata back_layout }
+{ rondata back_layout back_handspring }
+{ rondata back_layout back_handspring back_handspring }
+{ rondata back_layout back_handspring back_handspring back_handspring }
+{ rondata back_layout back_handspring back_tuck }
+{ rondata back_layout back_handspring back_pike }
+{ rondata back_layout back_handspring arabian }
+{ rondata back_layout back_tuck }
+{ rondata back_layout back_tuck back_handspring }
+{ rondata back_layout back_tuck back_tuck }
+{ rondata back_layout back_pike }
+{ rondata back_layout back_pike back_handspring }
+{ rondata back_layout back_layout }
+{ rondata back_layout double_back_tuck }
+{ rondata back_layout arabian }
+{ rondata back_layout arabian ruota }
+{ rondata back_layout arabian rondata }
+{ rondata back_layout arabian ribaltata_a_2 }
+{ rondata double_back_tuck }
+{ rondata double_back_tuck back_handspring }
+{ rondata double_back_tuck back_handspring back_handspring }
+{ rondata double_back_tuck back_handspring back_tuck }
+{ rondata double_back_tuck back_tuck }
+{ rondata double_back_tuck back_tuck back_handspring }
+{ rondata double_back_tuck back_pike }
+{ rondata double_back_tuck back_layout }
+{ rondata double_back_tuck arabian }
+{ rondata double_back_tuck arabian ruota }
+{ rondata double_back_tuck arabian rondata }
+{ rondata double_back_layout }
+{ rondata triple_back_tuck }
+{ rondata back_layout_double_twist }
+{ rondata back_layout_double_twist back_handspring }
+{ rondata back_layout_quad_twist }
+{ rondata arabian }
+{ rondata arabian ruota }
+{ rondata arabian ruota back_handspring }
+{ rondata arabian ruota back_handspring back_handspring }
+{ rondata arabian ruota back_handspring back_tuck }
+{ rondata arabian ruota back_handspring back_pike }
+{ rondata arabian ruota back_handspring arabian }
+{ rondata arabian ruota back_tuck }
+{ rondata arabian ruota back_tuck back_handspring }
+{ rondata arabian ruota back_tuck back_tuck }
+{ rondata arabian ruota back_pike }
+{ rondata arabian ruota back_pike back_handspring }
+{ rondata arabian ruota back_layout }
+{ rondata arabian ruota double_back_tuck }
+{ rondata arabian ruota arabian }
+{ rondata arabian ruota arabian ruota }
+{ rondata arabian ruota arabian rondata }
+{ rondata arabian ruota arabian ribaltata_a_2 }
+{ rondata arabian rondata }
+{ rondata arabian rondata back_handspring }
+{ rondata arabian rondata back_handspring back_handspring }
+{ rondata arabian rondata back_handspring back_tuck }
+{ rondata arabian rondata back_handspring back_pike }
+{ rondata arabian rondata back_handspring arabian }
+{ rondata arabian rondata back_tuck }
+{ rondata arabian rondata back_tuck back_handspring }
+{ rondata arabian rondata back_tuck back_tuck }
+{ rondata arabian rondata back_pike }
+{ rondata arabian rondata back_pike back_handspring }
+{ rondata arabian rondata back_layout }
+{ rondata arabian rondata double_back_tuck }
+{ rondata arabian rondata arabian }
+{ rondata arabian rondata arabian ruota }
+{ rondata arabian rondata arabian rondata }
+{ rondata arabian rondata arabian ribaltata_a_2 }
+{ rondata arabian ribaltata_a_2 }
+{ rondata arabian ribaltata_a_2 ruota }
+{ rondata arabian ribaltata_a_2 ruota back_handspring }
+{ rondata arabian ribaltata_a_2 ruota back_tuck }
+{ rondata arabian ribaltata_a_2 ruota back_pike }
+{ rondata arabian ribaltata_a_2 ruota arabian }
+{ rondata arabian ribaltata_a_2 rondata }
+{ rondata arabian ribaltata_a_2 rondata back_handspring }
+{ rondata arabian ribaltata_a_2 rondata back_tuck }
+{ rondata arabian ribaltata_a_2 rondata back_pike }
+{ rondata arabian ribaltata_a_2 rondata arabian }
+{ rondata arabian ribaltata_a_2 ribaltata_a_2 }
+{ rondata arabian ribaltata_a_2 ribaltata_a_2 ruota }
+{ rondata arabian ribaltata_a_2 ribaltata_a_2 rondata }
+{ rondata arabian ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ rondata arabian ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ rondata arabian ribaltata_a_2 front_tuck }
+{ rondata arabian ribaltata_a_2 front_tuck ruota }
+{ rondata arabian ribaltata_a_2 front_tuck rondata }
+{ rondata arabian ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ rondata arabian ribaltata_a_2 front_pike }
+{ rondata arabian ribaltata_a_2 front_pike ruota }
+{ rondata arabian ribaltata_a_2 front_pike rondata }
+{ rondata arabian ribaltata_a_2 front_layout }
+{ rondata arabian front_tuck }
+{ rondata arabian front_tuck ruota }
+{ rondata arabian front_tuck ruota back_handspring }
+{ rondata arabian front_tuck ruota back_tuck }
+{ rondata arabian front_tuck rondata }
+{ rondata arabian front_tuck rondata back_handspring }
+{ rondata arabian front_tuck rondata back_tuck }
+{ rondata arabian front_tuck ribaltata_a_2 }
+{ rondata arabian front_tuck ribaltata_a_2 ruota }
+{ rondata arabian front_tuck ribaltata_a_2 rondata }
+{ rondata arabian front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ rondata arabian front_tuck front_tuck }
+{ rondata arabian front_tuck front_tuck ruota }
+{ rondata arabian front_tuck front_tuck rondata }
+{ rondata arabian front_tuck front_pike }
+{ rondata arabian front_pike }
+{ rondata arabian front_pike ruota }
+{ rondata arabian front_pike ruota back_handspring }
+{ rondata arabian front_pike rondata }
+{ rondata arabian front_pike rondata back_handspring }
+{ rondata arabian front_pike ribaltata_a_2 }
+{ rondata arabian front_pike ribaltata_a_2 ruota }
+{ rondata arabian front_pike ribaltata_a_2 rondata }
+{ rondata arabian front_pike front_tuck }
+{ rondata arabian front_layout }
+{ rondata arabian front_layout ruota }
+{ rondata arabian front_layout rondata }
+{ rondata arabian front_layout ribaltata_a_2 }
+{ rondata arabian double_front_tuck }
+{ rondata arabian double_front_tuck ruota }
+{ rondata arabian double_front_tuck rondata }
+{ rondata arabian double_front_layout }
+{ ribaltata_a_2 }
+{ ribaltata_a_2 ruota }
+{ ribaltata_a_2 ruota back_handspring }
+{ ribaltata_a_2 ruota back_handspring back_handspring }
+{ ribaltata_a_2 ruota back_handspring back_handspring back_handspring }
+{ ribaltata_a_2 ruota back_handspring back_handspring back_tuck }
+{ ribaltata_a_2 ruota back_handspring back_handspring back_pike }
+{ ribaltata_a_2 ruota back_handspring back_handspring back_layout }
+{ ribaltata_a_2 ruota back_handspring back_handspring arabian }
+{ ribaltata_a_2 ruota back_handspring back_tuck }
+{ ribaltata_a_2 ruota back_handspring back_tuck back_handspring }
+{ ribaltata_a_2 ruota back_handspring back_tuck back_tuck }
+{ ribaltata_a_2 ruota back_handspring back_tuck back_pike }
+{ ribaltata_a_2 ruota back_handspring back_tuck arabian }
+{ ribaltata_a_2 ruota back_handspring back_pike }
+{ ribaltata_a_2 ruota back_handspring back_pike back_handspring }
+{ ribaltata_a_2 ruota back_handspring back_pike back_tuck }
+{ ribaltata_a_2 ruota back_handspring back_layout }
+{ ribaltata_a_2 ruota back_handspring back_layout back_handspring }
+{ ribaltata_a_2 ruota back_handspring double_back_tuck }
+{ ribaltata_a_2 ruota back_handspring double_back_layout }
+{ ribaltata_a_2 ruota back_handspring arabian }
+{ ribaltata_a_2 ruota back_handspring arabian ruota }
+{ ribaltata_a_2 ruota back_handspring arabian rondata }
+{ ribaltata_a_2 ruota back_handspring arabian ribaltata_a_2 }
+{ ribaltata_a_2 ruota back_handspring arabian front_tuck }
+{ ribaltata_a_2 ruota back_tuck }
+{ ribaltata_a_2 ruota back_tuck back_handspring }
+{ ribaltata_a_2 ruota back_tuck back_handspring back_handspring }
+{ ribaltata_a_2 ruota back_tuck back_handspring back_tuck }
+{ ribaltata_a_2 ruota back_tuck back_handspring back_pike }
+{ ribaltata_a_2 ruota back_tuck back_handspring arabian }
+{ ribaltata_a_2 ruota back_tuck back_tuck }
+{ ribaltata_a_2 ruota back_tuck back_tuck back_handspring }
+{ ribaltata_a_2 ruota back_tuck back_tuck back_tuck }
+{ ribaltata_a_2 ruota back_tuck back_pike }
+{ ribaltata_a_2 ruota back_tuck back_pike back_handspring }
+{ ribaltata_a_2 ruota back_tuck back_layout }
+{ ribaltata_a_2 ruota back_tuck double_back_tuck }
+{ ribaltata_a_2 ruota back_tuck arabian }
+{ ribaltata_a_2 ruota back_tuck arabian ruota }
+{ ribaltata_a_2 ruota back_tuck arabian rondata }
+{ ribaltata_a_2 ruota back_tuck arabian ribaltata_a_2 }
+{ ribaltata_a_2 ruota back_pike }
+{ ribaltata_a_2 ruota back_pike back_handspring }
+{ ribaltata_a_2 ruota back_pike back_handspring back_handspring }
+{ ribaltata_a_2 ruota back_pike back_handspring back_tuck }
+{ ribaltata_a_2 ruota back_pike back_tuck }
+{ ribaltata_a_2 ruota back_pike back_tuck back_handspring }
+{ ribaltata_a_2 ruota back_pike back_pike }
+{ ribaltata_a_2 ruota back_pike back_layout }
+{ ribaltata_a_2 ruota back_pike arabian }
+{ ribaltata_a_2 ruota back_pike arabian ruota }
+{ ribaltata_a_2 ruota back_pike arabian rondata }
+{ ribaltata_a_2 ruota back_layout }
+{ ribaltata_a_2 ruota back_layout back_handspring }
+{ ribaltata_a_2 ruota back_layout back_handspring back_handspring }
+{ ribaltata_a_2 ruota back_layout back_tuck }
+{ ribaltata_a_2 ruota back_layout back_pike }
+{ ribaltata_a_2 ruota back_layout arabian }
+{ ribaltata_a_2 ruota double_back_tuck }
+{ ribaltata_a_2 ruota double_back_tuck back_handspring }
+{ ribaltata_a_2 ruota double_back_tuck back_tuck }
+{ ribaltata_a_2 ruota double_back_layout }
+{ ribaltata_a_2 ruota triple_back_tuck }
+{ ribaltata_a_2 ruota back_layout_double_twist }
+{ ribaltata_a_2 ruota arabian }
+{ ribaltata_a_2 ruota arabian ruota }
+{ ribaltata_a_2 ruota arabian ruota back_handspring }
+{ ribaltata_a_2 ruota arabian ruota back_tuck }
+{ ribaltata_a_2 ruota arabian ruota back_pike }
+{ ribaltata_a_2 ruota arabian ruota arabian }
+{ ribaltata_a_2 ruota arabian rondata }
+{ ribaltata_a_2 ruota arabian rondata back_handspring }
+{ ribaltata_a_2 ruota arabian rondata back_tuck }
+{ ribaltata_a_2 ruota arabian rondata back_pike }
+{ ribaltata_a_2 ruota arabian rondata arabian }
+{ ribaltata_a_2 ruota arabian ribaltata_a_2 }
+{ ribaltata_a_2 ruota arabian ribaltata_a_2 ruota }
+{ ribaltata_a_2 ruota arabian ribaltata_a_2 rondata }
+{ ribaltata_a_2 ruota arabian ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 ruota arabian ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 ruota arabian front_tuck }
+{ ribaltata_a_2 ruota arabian front_tuck ruota }
+{ ribaltata_a_2 ruota arabian front_tuck rondata }
+{ ribaltata_a_2 ruota arabian front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 ruota arabian front_pike }
+{ ribaltata_a_2 ruota arabian front_pike ruota }
+{ ribaltata_a_2 ruota arabian front_pike rondata }
+{ ribaltata_a_2 ruota arabian front_layout }
+{ ribaltata_a_2 rondata }
+{ ribaltata_a_2 rondata back_handspring }
+{ ribaltata_a_2 rondata back_handspring back_handspring }
+{ ribaltata_a_2 rondata back_handspring back_handspring back_handspring }
+{ ribaltata_a_2 rondata back_handspring back_handspring back_tuck }
+{ ribaltata_a_2 rondata back_handspring back_handspring back_pike }
+{ ribaltata_a_2 rondata back_handspring back_handspring back_layout }
+{ ribaltata_a_2 rondata back_handspring back_handspring arabian }
+{ ribaltata_a_2 rondata back_handspring back_tuck }
+{ ribaltata_a_2 rondata back_handspring back_tuck back_handspring }
+{ ribaltata_a_2 rondata back_handspring back_tuck back_tuck }
+{ ribaltata_a_2 rondata back_handspring back_tuck back_pike }
+{ ribaltata_a_2 rondata back_handspring back_tuck arabian }
+{ ribaltata_a_2 rondata back_handspring back_pike }
+{ ribaltata_a_2 rondata back_handspring back_pike back_handspring }
+{ ribaltata_a_2 rondata back_handspring back_pike back_tuck }
+{ ribaltata_a_2 rondata back_handspring back_layout }
+{ ribaltata_a_2 rondata back_handspring back_layout back_handspring }
+{ ribaltata_a_2 rondata back_handspring double_back_tuck }
+{ ribaltata_a_2 rondata back_handspring double_back_layout }
+{ ribaltata_a_2 rondata back_handspring arabian }
+{ ribaltata_a_2 rondata back_handspring arabian ruota }
+{ ribaltata_a_2 rondata back_handspring arabian rondata }
+{ ribaltata_a_2 rondata back_handspring arabian ribaltata_a_2 }
+{ ribaltata_a_2 rondata back_handspring arabian front_tuck }
+{ ribaltata_a_2 rondata back_tuck }
+{ ribaltata_a_2 rondata back_tuck back_handspring }
+{ ribaltata_a_2 rondata back_tuck back_handspring back_handspring }
+{ ribaltata_a_2 rondata back_tuck back_handspring back_tuck }
+{ ribaltata_a_2 rondata back_tuck back_handspring back_pike }
+{ ribaltata_a_2 rondata back_tuck back_handspring arabian }
+{ ribaltata_a_2 rondata back_tuck back_tuck }
+{ ribaltata_a_2 rondata back_tuck back_tuck back_handspring }
+{ ribaltata_a_2 rondata back_tuck back_tuck back_tuck }
+{ ribaltata_a_2 rondata back_tuck back_pike }
+{ ribaltata_a_2 rondata back_tuck back_pike back_handspring }
+{ ribaltata_a_2 rondata back_tuck back_layout }
+{ ribaltata_a_2 rondata back_tuck double_back_tuck }
+{ ribaltata_a_2 rondata back_tuck arabian }
+{ ribaltata_a_2 rondata back_tuck arabian ruota }
+{ ribaltata_a_2 rondata back_tuck arabian rondata }
+{ ribaltata_a_2 rondata back_tuck arabian ribaltata_a_2 }
+{ ribaltata_a_2 rondata back_pike }
+{ ribaltata_a_2 rondata back_pike back_handspring }
+{ ribaltata_a_2 rondata back_pike back_handspring back_handspring }
+{ ribaltata_a_2 rondata back_pike back_handspring back_tuck }
+{ ribaltata_a_2 rondata back_pike back_tuck }
+{ ribaltata_a_2 rondata back_pike back_tuck back_handspring }
+{ ribaltata_a_2 rondata back_pike back_pike }
+{ ribaltata_a_2 rondata back_pike back_layout }
+{ ribaltata_a_2 rondata back_pike arabian }
+{ ribaltata_a_2 rondata back_pike arabian ruota }
+{ ribaltata_a_2 rondata back_pike arabian rondata }
+{ ribaltata_a_2 rondata back_layout }
+{ ribaltata_a_2 rondata back_layout back_handspring }
+{ ribaltata_a_2 rondata back_layout back_handspring back_handspring }
+{ ribaltata_a_2 rondata back_layout back_tuck }
+{ ribaltata_a_2 rondata back_layout back_pike }
+{ ribaltata_a_2 rondata back_layout arabian }
+{ ribaltata_a_2 rondata double_back_tuck }
+{ ribaltata_a_2 rondata double_back_tuck back_handspring }
+{ ribaltata_a_2 rondata double_back_tuck back_tuck }
+{ ribaltata_a_2 rondata double_back_layout }
+{ ribaltata_a_2 rondata triple_back_tuck }
+{ ribaltata_a_2 rondata back_layout_double_twist }
+{ ribaltata_a_2 rondata arabian }
+{ ribaltata_a_2 rondata arabian ruota }
+{ ribaltata_a_2 rondata arabian ruota back_handspring }
+{ ribaltata_a_2 rondata arabian ruota back_tuck }
+{ ribaltata_a_2 rondata arabian ruota back_pike }
+{ ribaltata_a_2 rondata arabian ruota arabian }
+{ ribaltata_a_2 rondata arabian rondata }
+{ ribaltata_a_2 rondata arabian rondata back_handspring }
+{ ribaltata_a_2 rondata arabian rondata back_tuck }
+{ ribaltata_a_2 rondata arabian rondata back_pike }
+{ ribaltata_a_2 rondata arabian rondata arabian }
+{ ribaltata_a_2 rondata arabian ribaltata_a_2 }
+{ ribaltata_a_2 rondata arabian ribaltata_a_2 ruota }
+{ ribaltata_a_2 rondata arabian ribaltata_a_2 rondata }
+{ ribaltata_a_2 rondata arabian ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 rondata arabian ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 rondata arabian front_tuck }
+{ ribaltata_a_2 rondata arabian front_tuck ruota }
+{ ribaltata_a_2 rondata arabian front_tuck rondata }
+{ ribaltata_a_2 rondata arabian front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 rondata arabian front_pike }
+{ ribaltata_a_2 rondata arabian front_pike ruota }
+{ ribaltata_a_2 rondata arabian front_pike rondata }
+{ ribaltata_a_2 rondata arabian front_layout }
+{ ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 ruota }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_handspring back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_handspring back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_handspring back_pike }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_handspring back_layout }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_handspring arabian }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_tuck back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_tuck back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_tuck back_pike }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_tuck arabian }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_pike }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_pike back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_pike back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_layout }
+{ ribaltata_a_2 ribaltata_a_2 ruota back_layout back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 ruota double_back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ruota double_back_layout }
+{ ribaltata_a_2 ribaltata_a_2 ruota arabian }
+{ ribaltata_a_2 ribaltata_a_2 ruota arabian ruota }
+{ ribaltata_a_2 ribaltata_a_2 ruota arabian rondata }
+{ ribaltata_a_2 ribaltata_a_2 ruota arabian ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 ruota arabian front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 rondata }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_handspring back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_handspring back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_handspring back_pike }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_handspring back_layout }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_handspring arabian }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_tuck back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_tuck back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_tuck back_pike }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_tuck arabian }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_pike }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_pike back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_pike back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_layout }
+{ ribaltata_a_2 ribaltata_a_2 rondata back_layout back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 rondata double_back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 rondata double_back_layout }
+{ ribaltata_a_2 ribaltata_a_2 rondata arabian }
+{ ribaltata_a_2 ribaltata_a_2 rondata arabian ruota }
+{ ribaltata_a_2 ribaltata_a_2 rondata arabian rondata }
+{ ribaltata_a_2 ribaltata_a_2 rondata arabian ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 rondata arabian front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota back_pike }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota back_layout }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota arabian }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata back_pike }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata back_layout }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata arabian }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_pike }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_tuck ruota }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_tuck rondata }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_tuck front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_pike }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_pike ruota }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_pike rondata }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_pike ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_layout }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_layout ruota }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_layout rondata }
+{ ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 double_front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ruota back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ruota back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ruota back_pike }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ruota arabian }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck rondata back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck rondata back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck rondata back_pike }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck rondata arabian }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ribaltata_a_2 ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ribaltata_a_2 rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_tuck ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_tuck rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_pike }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_pike ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_pike rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_tuck front_layout }
+{ ribaltata_a_2 ribaltata_a_2 front_pike }
+{ ribaltata_a_2 ribaltata_a_2 front_pike ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_pike ruota back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 front_pike ruota back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_pike rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_pike rondata back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 front_pike rondata back_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_pike ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 front_pike ribaltata_a_2 ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_pike ribaltata_a_2 rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_pike ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 front_pike front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 front_pike front_tuck ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_pike front_tuck rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_pike front_pike }
+{ ribaltata_a_2 ribaltata_a_2 front_layout }
+{ ribaltata_a_2 ribaltata_a_2 front_layout ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_layout ruota back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 front_layout rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_layout rondata back_handspring }
+{ ribaltata_a_2 ribaltata_a_2 front_layout ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 front_layout ribaltata_a_2 ruota }
+{ ribaltata_a_2 ribaltata_a_2 front_layout ribaltata_a_2 rondata }
+{ ribaltata_a_2 ribaltata_a_2 front_layout front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 double_front_tuck }
+{ ribaltata_a_2 ribaltata_a_2 double_front_tuck ruota }
+{ ribaltata_a_2 ribaltata_a_2 double_front_tuck rondata }
+{ ribaltata_a_2 ribaltata_a_2 double_front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 ribaltata_a_2 double_front_layout }
+{ ribaltata_a_2 ribaltata_a_2 triple_front_tuck }
+{ ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 front_tuck ruota }
+{ ribaltata_a_2 front_tuck ruota back_handspring }
+{ ribaltata_a_2 front_tuck ruota back_handspring back_handspring }
+{ ribaltata_a_2 front_tuck ruota back_handspring back_tuck }
+{ ribaltata_a_2 front_tuck ruota back_handspring back_pike }
+{ ribaltata_a_2 front_tuck ruota back_handspring arabian }
+{ ribaltata_a_2 front_tuck ruota back_tuck }
+{ ribaltata_a_2 front_tuck ruota back_tuck back_handspring }
+{ ribaltata_a_2 front_tuck ruota back_tuck back_tuck }
+{ ribaltata_a_2 front_tuck ruota back_pike }
+{ ribaltata_a_2 front_tuck ruota back_pike back_handspring }
+{ ribaltata_a_2 front_tuck ruota back_layout }
+{ ribaltata_a_2 front_tuck ruota double_back_tuck }
+{ ribaltata_a_2 front_tuck ruota arabian }
+{ ribaltata_a_2 front_tuck ruota arabian ruota }
+{ ribaltata_a_2 front_tuck ruota arabian rondata }
+{ ribaltata_a_2 front_tuck ruota arabian ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck rondata }
+{ ribaltata_a_2 front_tuck rondata back_handspring }
+{ ribaltata_a_2 front_tuck rondata back_handspring back_handspring }
+{ ribaltata_a_2 front_tuck rondata back_handspring back_tuck }
+{ ribaltata_a_2 front_tuck rondata back_handspring back_pike }
+{ ribaltata_a_2 front_tuck rondata back_handspring arabian }
+{ ribaltata_a_2 front_tuck rondata back_tuck }
+{ ribaltata_a_2 front_tuck rondata back_tuck back_handspring }
+{ ribaltata_a_2 front_tuck rondata back_tuck back_tuck }
+{ ribaltata_a_2 front_tuck rondata back_pike }
+{ ribaltata_a_2 front_tuck rondata back_pike back_handspring }
+{ ribaltata_a_2 front_tuck rondata back_layout }
+{ ribaltata_a_2 front_tuck rondata double_back_tuck }
+{ ribaltata_a_2 front_tuck rondata arabian }
+{ ribaltata_a_2 front_tuck rondata arabian ruota }
+{ ribaltata_a_2 front_tuck rondata arabian rondata }
+{ ribaltata_a_2 front_tuck rondata arabian ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ruota back_handspring }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ruota back_tuck }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ruota back_pike }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ruota arabian }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 rondata back_handspring }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 rondata back_tuck }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 rondata back_pike }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 rondata arabian }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_tuck ruota }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_tuck rondata }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_pike }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_pike ruota }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_pike rondata }
+{ ribaltata_a_2 front_tuck ribaltata_a_2 front_layout }
+{ ribaltata_a_2 front_tuck front_tuck }
+{ ribaltata_a_2 front_tuck front_tuck ruota }
+{ ribaltata_a_2 front_tuck front_tuck ruota back_handspring }
+{ ribaltata_a_2 front_tuck front_tuck ruota back_tuck }
+{ ribaltata_a_2 front_tuck front_tuck rondata }
+{ ribaltata_a_2 front_tuck front_tuck rondata back_handspring }
+{ ribaltata_a_2 front_tuck front_tuck rondata back_tuck }
+{ ribaltata_a_2 front_tuck front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck front_tuck ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_tuck front_tuck ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_tuck front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck front_tuck front_tuck }
+{ ribaltata_a_2 front_tuck front_tuck front_tuck ruota }
+{ ribaltata_a_2 front_tuck front_tuck front_tuck rondata }
+{ ribaltata_a_2 front_tuck front_tuck front_pike }
+{ ribaltata_a_2 front_tuck front_pike }
+{ ribaltata_a_2 front_tuck front_pike ruota }
+{ ribaltata_a_2 front_tuck front_pike ruota back_handspring }
+{ ribaltata_a_2 front_tuck front_pike rondata }
+{ ribaltata_a_2 front_tuck front_pike rondata back_handspring }
+{ ribaltata_a_2 front_tuck front_pike ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck front_pike ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_tuck front_pike ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_tuck front_pike front_tuck }
+{ ribaltata_a_2 front_tuck front_layout }
+{ ribaltata_a_2 front_tuck front_layout ruota }
+{ ribaltata_a_2 front_tuck front_layout rondata }
+{ ribaltata_a_2 front_tuck front_layout ribaltata_a_2 }
+{ ribaltata_a_2 front_tuck double_front_tuck }
+{ ribaltata_a_2 front_tuck double_front_tuck ruota }
+{ ribaltata_a_2 front_tuck double_front_tuck rondata }
+{ ribaltata_a_2 front_tuck double_front_layout }
+{ ribaltata_a_2 front_pike }
+{ ribaltata_a_2 front_pike ruota }
+{ ribaltata_a_2 front_pike ruota back_handspring }
+{ ribaltata_a_2 front_pike ruota back_handspring back_handspring }
+{ ribaltata_a_2 front_pike ruota back_handspring back_tuck }
+{ ribaltata_a_2 front_pike ruota back_tuck }
+{ ribaltata_a_2 front_pike ruota back_tuck back_handspring }
+{ ribaltata_a_2 front_pike ruota back_pike }
+{ ribaltata_a_2 front_pike ruota back_layout }
+{ ribaltata_a_2 front_pike ruota arabian }
+{ ribaltata_a_2 front_pike ruota arabian ruota }
+{ ribaltata_a_2 front_pike ruota arabian rondata }
+{ ribaltata_a_2 front_pike rondata }
+{ ribaltata_a_2 front_pike rondata back_handspring }
+{ ribaltata_a_2 front_pike rondata back_handspring back_handspring }
+{ ribaltata_a_2 front_pike rondata back_handspring back_tuck }
+{ ribaltata_a_2 front_pike rondata back_tuck }
+{ ribaltata_a_2 front_pike rondata back_tuck back_handspring }
+{ ribaltata_a_2 front_pike rondata back_pike }
+{ ribaltata_a_2 front_pike rondata back_layout }
+{ ribaltata_a_2 front_pike rondata arabian }
+{ ribaltata_a_2 front_pike rondata arabian ruota }
+{ ribaltata_a_2 front_pike rondata arabian rondata }
+{ ribaltata_a_2 front_pike ribaltata_a_2 }
+{ ribaltata_a_2 front_pike ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_pike ribaltata_a_2 ruota back_handspring }
+{ ribaltata_a_2 front_pike ribaltata_a_2 ruota back_tuck }
+{ ribaltata_a_2 front_pike ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_pike ribaltata_a_2 rondata back_handspring }
+{ ribaltata_a_2 front_pike ribaltata_a_2 rondata back_tuck }
+{ ribaltata_a_2 front_pike ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 front_pike ribaltata_a_2 ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_pike ribaltata_a_2 ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_pike ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 front_pike ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 front_pike ribaltata_a_2 front_tuck ruota }
+{ ribaltata_a_2 front_pike ribaltata_a_2 front_tuck rondata }
+{ ribaltata_a_2 front_pike ribaltata_a_2 front_pike }
+{ ribaltata_a_2 front_pike front_tuck }
+{ ribaltata_a_2 front_pike front_tuck ruota }
+{ ribaltata_a_2 front_pike front_tuck ruota back_handspring }
+{ ribaltata_a_2 front_pike front_tuck rondata }
+{ ribaltata_a_2 front_pike front_tuck rondata back_handspring }
+{ ribaltata_a_2 front_pike front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 front_pike front_tuck ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_pike front_tuck ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_pike front_tuck front_tuck }
+{ ribaltata_a_2 front_pike front_pike }
+{ ribaltata_a_2 front_pike front_pike ruota }
+{ ribaltata_a_2 front_pike front_pike rondata }
+{ ribaltata_a_2 front_pike front_pike ribaltata_a_2 }
+{ ribaltata_a_2 front_pike front_layout }
+{ ribaltata_a_2 front_pike front_layout ruota }
+{ ribaltata_a_2 front_pike front_layout rondata }
+{ ribaltata_a_2 front_pike double_front_tuck }
+{ ribaltata_a_2 front_layout }
+{ ribaltata_a_2 front_layout ruota }
+{ ribaltata_a_2 front_layout ruota back_handspring }
+{ ribaltata_a_2 front_layout ruota back_handspring back_handspring }
+{ ribaltata_a_2 front_layout ruota back_tuck }
+{ ribaltata_a_2 front_layout ruota back_pike }
+{ ribaltata_a_2 front_layout ruota arabian }
+{ ribaltata_a_2 front_layout rondata }
+{ ribaltata_a_2 front_layout rondata back_handspring }
+{ ribaltata_a_2 front_layout rondata back_handspring back_handspring }
+{ ribaltata_a_2 front_layout rondata back_tuck }
+{ ribaltata_a_2 front_layout rondata back_pike }
+{ ribaltata_a_2 front_layout rondata arabian }
+{ ribaltata_a_2 front_layout ribaltata_a_2 }
+{ ribaltata_a_2 front_layout ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_layout ribaltata_a_2 ruota back_handspring }
+{ ribaltata_a_2 front_layout ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_layout ribaltata_a_2 rondata back_handspring }
+{ ribaltata_a_2 front_layout ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 front_layout ribaltata_a_2 ribaltata_a_2 ruota }
+{ ribaltata_a_2 front_layout ribaltata_a_2 ribaltata_a_2 rondata }
+{ ribaltata_a_2 front_layout ribaltata_a_2 front_tuck }
+{ ribaltata_a_2 front_layout front_tuck }
+{ ribaltata_a_2 front_layout front_tuck ruota }
+{ ribaltata_a_2 front_layout front_tuck rondata }
+{ ribaltata_a_2 front_layout front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 front_layout front_pike }
+{ ribaltata_a_2 front_layout front_pike ruota }
+{ ribaltata_a_2 front_layout front_pike rondata }
+{ ribaltata_a_2 front_layout front_layout }
+{ ribaltata_a_2 double_front_tuck }
+{ ribaltata_a_2 double_front_tuck ruota }
+{ ribaltata_a_2 double_front_tuck ruota back_handspring }
+{ ribaltata_a_2 double_front_tuck ruota back_tuck }
+{ ribaltata_a_2 double_front_tuck rondata }
+{ ribaltata_a_2 double_front_tuck rondata back_handspring }
+{ ribaltata_a_2 double_front_tuck rondata back_tuck }
+{ ribaltata_a_2 double_front_tuck ribaltata_a_2 }
+{ ribaltata_a_2 double_front_tuck ribaltata_a_2 ruota }
+{ ribaltata_a_2 double_front_tuck ribaltata_a_2 rondata }
+{ ribaltata_a_2 double_front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ ribaltata_a_2 double_front_tuck front_tuck }
+{ ribaltata_a_2 double_front_tuck front_tuck ruota }
+{ ribaltata_a_2 double_front_tuck front_tuck rondata }
+{ ribaltata_a_2 double_front_tuck front_pike }
+{ ribaltata_a_2 double_front_layout }
+{ ribaltata_a_2 triple_front_tuck }
+{ front_tuck }
+{ front_tuck ruota }
+{ front_tuck ruota back_handspring }
+{ front_tuck ruota back_handspring back_handspring }
+{ front_tuck ruota back_handspring back_handspring back_handspring }
+{ front_tuck ruota back_handspring back_handspring back_tuck }
+{ front_tuck ruota back_handspring back_handspring back_pike }
+{ front_tuck ruota back_handspring back_handspring arabian }
+{ front_tuck ruota back_handspring back_tuck }
+{ front_tuck ruota back_handspring back_tuck back_handspring }
+{ front_tuck ruota back_handspring back_tuck back_tuck }
+{ front_tuck ruota back_handspring back_pike }
+{ front_tuck ruota back_handspring back_pike back_handspring }
+{ front_tuck ruota back_handspring back_layout }
+{ front_tuck ruota back_handspring double_back_tuck }
+{ front_tuck ruota back_handspring arabian }
+{ front_tuck ruota back_handspring arabian ruota }
+{ front_tuck ruota back_handspring arabian rondata }
+{ front_tuck ruota back_handspring arabian ribaltata_a_2 }
+{ front_tuck ruota back_tuck }
+{ front_tuck ruota back_tuck back_handspring }
+{ front_tuck ruota back_tuck back_handspring back_handspring }
+{ front_tuck ruota back_tuck back_handspring back_tuck }
+{ front_tuck ruota back_tuck back_tuck }
+{ front_tuck ruota back_tuck back_tuck back_handspring }
+{ front_tuck ruota back_tuck back_pike }
+{ front_tuck ruota back_tuck back_layout }
+{ front_tuck ruota back_tuck arabian }
+{ front_tuck ruota back_tuck arabian ruota }
+{ front_tuck ruota back_tuck arabian rondata }
+{ front_tuck ruota back_pike }
+{ front_tuck ruota back_pike back_handspring }
+{ front_tuck ruota back_pike back_handspring back_handspring }
+{ front_tuck ruota back_pike back_tuck }
+{ front_tuck ruota back_pike back_pike }
+{ front_tuck ruota back_pike arabian }
+{ front_tuck ruota back_layout }
+{ front_tuck ruota back_layout back_handspring }
+{ front_tuck ruota back_layout back_tuck }
+{ front_tuck ruota double_back_tuck }
+{ front_tuck ruota double_back_tuck back_handspring }
+{ front_tuck ruota double_back_layout }
+{ front_tuck ruota triple_back_tuck }
+{ front_tuck ruota arabian }
+{ front_tuck ruota arabian ruota }
+{ front_tuck ruota arabian ruota back_handspring }
+{ front_tuck ruota arabian ruota back_tuck }
+{ front_tuck ruota arabian rondata }
+{ front_tuck ruota arabian rondata back_handspring }
+{ front_tuck ruota arabian rondata back_tuck }
+{ front_tuck ruota arabian ribaltata_a_2 }
+{ front_tuck ruota arabian ribaltata_a_2 ruota }
+{ front_tuck ruota arabian ribaltata_a_2 rondata }
+{ front_tuck ruota arabian ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck ruota arabian front_tuck }
+{ front_tuck ruota arabian front_tuck ruota }
+{ front_tuck ruota arabian front_tuck rondata }
+{ front_tuck ruota arabian front_pike }
+{ front_tuck rondata }
+{ front_tuck rondata back_handspring }
+{ front_tuck rondata back_handspring back_handspring }
+{ front_tuck rondata back_handspring back_handspring back_handspring }
+{ front_tuck rondata back_handspring back_handspring back_tuck }
+{ front_tuck rondata back_handspring back_handspring back_pike }
+{ front_tuck rondata back_handspring back_handspring arabian }
+{ front_tuck rondata back_handspring back_tuck }
+{ front_tuck rondata back_handspring back_tuck back_handspring }
+{ front_tuck rondata back_handspring back_tuck back_tuck }
+{ front_tuck rondata back_handspring back_pike }
+{ front_tuck rondata back_handspring back_pike back_handspring }
+{ front_tuck rondata back_handspring back_layout }
+{ front_tuck rondata back_handspring double_back_tuck }
+{ front_tuck rondata back_handspring arabian }
+{ front_tuck rondata back_handspring arabian ruota }
+{ front_tuck rondata back_handspring arabian rondata }
+{ front_tuck rondata back_handspring arabian ribaltata_a_2 }
+{ front_tuck rondata back_tuck }
+{ front_tuck rondata back_tuck back_handspring }
+{ front_tuck rondata back_tuck back_handspring back_handspring }
+{ front_tuck rondata back_tuck back_handspring back_tuck }
+{ front_tuck rondata back_tuck back_tuck }
+{ front_tuck rondata back_tuck back_tuck back_handspring }
+{ front_tuck rondata back_tuck back_pike }
+{ front_tuck rondata back_tuck back_layout }
+{ front_tuck rondata back_tuck arabian }
+{ front_tuck rondata back_tuck arabian ruota }
+{ front_tuck rondata back_tuck arabian rondata }
+{ front_tuck rondata back_pike }
+{ front_tuck rondata back_pike back_handspring }
+{ front_tuck rondata back_pike back_handspring back_handspring }
+{ front_tuck rondata back_pike back_tuck }
+{ front_tuck rondata back_pike back_pike }
+{ front_tuck rondata back_pike arabian }
+{ front_tuck rondata back_layout }
+{ front_tuck rondata back_layout back_handspring }
+{ front_tuck rondata back_layout back_tuck }
+{ front_tuck rondata double_back_tuck }
+{ front_tuck rondata double_back_tuck back_handspring }
+{ front_tuck rondata double_back_layout }
+{ front_tuck rondata triple_back_tuck }
+{ front_tuck rondata arabian }
+{ front_tuck rondata arabian ruota }
+{ front_tuck rondata arabian ruota back_handspring }
+{ front_tuck rondata arabian ruota back_tuck }
+{ front_tuck rondata arabian rondata }
+{ front_tuck rondata arabian rondata back_handspring }
+{ front_tuck rondata arabian rondata back_tuck }
+{ front_tuck rondata arabian ribaltata_a_2 }
+{ front_tuck rondata arabian ribaltata_a_2 ruota }
+{ front_tuck rondata arabian ribaltata_a_2 rondata }
+{ front_tuck rondata arabian ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck rondata arabian front_tuck }
+{ front_tuck rondata arabian front_tuck ruota }
+{ front_tuck rondata arabian front_tuck rondata }
+{ front_tuck rondata arabian front_pike }
+{ front_tuck ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 ruota }
+{ front_tuck ribaltata_a_2 ruota back_handspring }
+{ front_tuck ribaltata_a_2 ruota back_handspring back_handspring }
+{ front_tuck ribaltata_a_2 ruota back_handspring back_tuck }
+{ front_tuck ribaltata_a_2 ruota back_handspring back_pike }
+{ front_tuck ribaltata_a_2 ruota back_handspring arabian }
+{ front_tuck ribaltata_a_2 ruota back_tuck }
+{ front_tuck ribaltata_a_2 ruota back_tuck back_handspring }
+{ front_tuck ribaltata_a_2 ruota back_tuck back_tuck }
+{ front_tuck ribaltata_a_2 ruota back_pike }
+{ front_tuck ribaltata_a_2 ruota back_pike back_handspring }
+{ front_tuck ribaltata_a_2 ruota back_layout }
+{ front_tuck ribaltata_a_2 ruota double_back_tuck }
+{ front_tuck ribaltata_a_2 ruota arabian }
+{ front_tuck ribaltata_a_2 ruota arabian ruota }
+{ front_tuck ribaltata_a_2 ruota arabian rondata }
+{ front_tuck ribaltata_a_2 ruota arabian ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 rondata }
+{ front_tuck ribaltata_a_2 rondata back_handspring }
+{ front_tuck ribaltata_a_2 rondata back_handspring back_handspring }
+{ front_tuck ribaltata_a_2 rondata back_handspring back_tuck }
+{ front_tuck ribaltata_a_2 rondata back_handspring back_pike }
+{ front_tuck ribaltata_a_2 rondata back_handspring arabian }
+{ front_tuck ribaltata_a_2 rondata back_tuck }
+{ front_tuck ribaltata_a_2 rondata back_tuck back_handspring }
+{ front_tuck ribaltata_a_2 rondata back_tuck back_tuck }
+{ front_tuck ribaltata_a_2 rondata back_pike }
+{ front_tuck ribaltata_a_2 rondata back_pike back_handspring }
+{ front_tuck ribaltata_a_2 rondata back_layout }
+{ front_tuck ribaltata_a_2 rondata double_back_tuck }
+{ front_tuck ribaltata_a_2 rondata arabian }
+{ front_tuck ribaltata_a_2 rondata arabian ruota }
+{ front_tuck ribaltata_a_2 rondata arabian rondata }
+{ front_tuck ribaltata_a_2 rondata arabian ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ruota back_handspring }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ruota back_tuck }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ruota back_pike }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ruota arabian }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 rondata back_handspring }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 rondata back_tuck }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 rondata back_pike }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 rondata arabian }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_tuck ruota }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_tuck rondata }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_pike }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_pike ruota }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_pike rondata }
+{ front_tuck ribaltata_a_2 ribaltata_a_2 front_layout }
+{ front_tuck ribaltata_a_2 front_tuck }
+{ front_tuck ribaltata_a_2 front_tuck ruota }
+{ front_tuck ribaltata_a_2 front_tuck ruota back_handspring }
+{ front_tuck ribaltata_a_2 front_tuck ruota back_tuck }
+{ front_tuck ribaltata_a_2 front_tuck rondata }
+{ front_tuck ribaltata_a_2 front_tuck rondata back_handspring }
+{ front_tuck ribaltata_a_2 front_tuck rondata back_tuck }
+{ front_tuck ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 front_tuck ribaltata_a_2 ruota }
+{ front_tuck ribaltata_a_2 front_tuck ribaltata_a_2 rondata }
+{ front_tuck ribaltata_a_2 front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 front_tuck front_tuck }
+{ front_tuck ribaltata_a_2 front_tuck front_tuck ruota }
+{ front_tuck ribaltata_a_2 front_tuck front_tuck rondata }
+{ front_tuck ribaltata_a_2 front_tuck front_pike }
+{ front_tuck ribaltata_a_2 front_pike }
+{ front_tuck ribaltata_a_2 front_pike ruota }
+{ front_tuck ribaltata_a_2 front_pike ruota back_handspring }
+{ front_tuck ribaltata_a_2 front_pike rondata }
+{ front_tuck ribaltata_a_2 front_pike rondata back_handspring }
+{ front_tuck ribaltata_a_2 front_pike ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 front_pike ribaltata_a_2 ruota }
+{ front_tuck ribaltata_a_2 front_pike ribaltata_a_2 rondata }
+{ front_tuck ribaltata_a_2 front_pike front_tuck }
+{ front_tuck ribaltata_a_2 front_layout }
+{ front_tuck ribaltata_a_2 front_layout ruota }
+{ front_tuck ribaltata_a_2 front_layout rondata }
+{ front_tuck ribaltata_a_2 front_layout ribaltata_a_2 }
+{ front_tuck ribaltata_a_2 double_front_tuck }
+{ front_tuck ribaltata_a_2 double_front_tuck ruota }
+{ front_tuck ribaltata_a_2 double_front_tuck rondata }
+{ front_tuck ribaltata_a_2 double_front_layout }
+{ front_tuck front_tuck }
+{ front_tuck front_tuck ruota }
+{ front_tuck front_tuck ruota back_handspring }
+{ front_tuck front_tuck ruota back_handspring back_handspring }
+{ front_tuck front_tuck ruota back_handspring back_tuck }
+{ front_tuck front_tuck ruota back_tuck }
+{ front_tuck front_tuck ruota back_tuck back_handspring }
+{ front_tuck front_tuck ruota back_pike }
+{ front_tuck front_tuck ruota back_layout }
+{ front_tuck front_tuck ruota arabian }
+{ front_tuck front_tuck ruota arabian ruota }
+{ front_tuck front_tuck ruota arabian rondata }
+{ front_tuck front_tuck rondata }
+{ front_tuck front_tuck rondata back_handspring }
+{ front_tuck front_tuck rondata back_handspring back_handspring }
+{ front_tuck front_tuck rondata back_handspring back_tuck }
+{ front_tuck front_tuck rondata back_tuck }
+{ front_tuck front_tuck rondata back_tuck back_handspring }
+{ front_tuck front_tuck rondata back_pike }
+{ front_tuck front_tuck rondata back_layout }
+{ front_tuck front_tuck rondata arabian }
+{ front_tuck front_tuck rondata arabian ruota }
+{ front_tuck front_tuck rondata arabian rondata }
+{ front_tuck front_tuck ribaltata_a_2 }
+{ front_tuck front_tuck ribaltata_a_2 ruota }
+{ front_tuck front_tuck ribaltata_a_2 ruota back_handspring }
+{ front_tuck front_tuck ribaltata_a_2 ruota back_tuck }
+{ front_tuck front_tuck ribaltata_a_2 rondata }
+{ front_tuck front_tuck ribaltata_a_2 rondata back_handspring }
+{ front_tuck front_tuck ribaltata_a_2 rondata back_tuck }
+{ front_tuck front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck front_tuck ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_tuck front_tuck ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_tuck front_tuck ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck front_tuck ribaltata_a_2 front_tuck }
+{ front_tuck front_tuck ribaltata_a_2 front_tuck ruota }
+{ front_tuck front_tuck ribaltata_a_2 front_tuck rondata }
+{ front_tuck front_tuck ribaltata_a_2 front_pike }
+{ front_tuck front_tuck front_tuck }
+{ front_tuck front_tuck front_tuck ruota }
+{ front_tuck front_tuck front_tuck ruota back_handspring }
+{ front_tuck front_tuck front_tuck rondata }
+{ front_tuck front_tuck front_tuck rondata back_handspring }
+{ front_tuck front_tuck front_tuck ribaltata_a_2 }
+{ front_tuck front_tuck front_tuck ribaltata_a_2 ruota }
+{ front_tuck front_tuck front_tuck ribaltata_a_2 rondata }
+{ front_tuck front_tuck front_tuck front_tuck }
+{ front_tuck front_tuck front_pike }
+{ front_tuck front_tuck front_pike ruota }
+{ front_tuck front_tuck front_pike rondata }
+{ front_tuck front_tuck front_pike ribaltata_a_2 }
+{ front_tuck front_tuck front_layout }
+{ front_tuck front_tuck front_layout ruota }
+{ front_tuck front_tuck front_layout rondata }
+{ front_tuck front_tuck double_front_tuck }
+{ front_tuck front_pike }
+{ front_tuck front_pike ruota }
+{ front_tuck front_pike ruota back_handspring }
+{ front_tuck front_pike ruota back_handspring back_handspring }
+{ front_tuck front_pike ruota back_tuck }
+{ front_tuck front_pike ruota back_pike }
+{ front_tuck front_pike ruota arabian }
+{ front_tuck front_pike rondata }
+{ front_tuck front_pike rondata back_handspring }
+{ front_tuck front_pike rondata back_handspring back_handspring }
+{ front_tuck front_pike rondata back_tuck }
+{ front_tuck front_pike rondata back_pike }
+{ front_tuck front_pike rondata arabian }
+{ front_tuck front_pike ribaltata_a_2 }
+{ front_tuck front_pike ribaltata_a_2 ruota }
+{ front_tuck front_pike ribaltata_a_2 ruota back_handspring }
+{ front_tuck front_pike ribaltata_a_2 rondata }
+{ front_tuck front_pike ribaltata_a_2 rondata back_handspring }
+{ front_tuck front_pike ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck front_pike ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_tuck front_pike ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_tuck front_pike ribaltata_a_2 front_tuck }
+{ front_tuck front_pike front_tuck }
+{ front_tuck front_pike front_tuck ruota }
+{ front_tuck front_pike front_tuck rondata }
+{ front_tuck front_pike front_tuck ribaltata_a_2 }
+{ front_tuck front_pike front_pike }
+{ front_tuck front_pike front_pike ruota }
+{ front_tuck front_pike front_pike rondata }
+{ front_tuck front_pike front_layout }
+{ front_tuck front_layout }
+{ front_tuck front_layout ruota }
+{ front_tuck front_layout ruota back_handspring }
+{ front_tuck front_layout ruota back_tuck }
+{ front_tuck front_layout rondata }
+{ front_tuck front_layout rondata back_handspring }
+{ front_tuck front_layout rondata back_tuck }
+{ front_tuck front_layout ribaltata_a_2 }
+{ front_tuck front_layout ribaltata_a_2 ruota }
+{ front_tuck front_layout ribaltata_a_2 rondata }
+{ front_tuck front_layout ribaltata_a_2 ribaltata_a_2 }
+{ front_tuck front_layout front_tuck }
+{ front_tuck front_layout front_tuck ruota }
+{ front_tuck front_layout front_tuck rondata }
+{ front_tuck front_layout front_pike }
+{ front_tuck double_front_tuck }
+{ front_tuck double_front_tuck ruota }
+{ front_tuck double_front_tuck ruota back_handspring }
+{ front_tuck double_front_tuck rondata }
+{ front_tuck double_front_tuck rondata back_handspring }
+{ front_tuck double_front_tuck ribaltata_a_2 }
+{ front_tuck double_front_tuck ribaltata_a_2 ruota }
+{ front_tuck double_front_tuck ribaltata_a_2 rondata }
+{ front_tuck double_front_tuck front_tuck }
+{ front_tuck double_front_layout }
+{ front_tuck triple_front_tuck }
+{ front_pike }
+{ front_pike ruota }
+{ front_pike ruota back_handspring }
+{ front_pike ruota back_handspring back_handspring }
+{ front_pike ruota back_handspring back_handspring back_handspring }
+{ front_pike ruota back_handspring back_handspring back_tuck }
+{ front_pike ruota back_handspring back_tuck }
+{ front_pike ruota back_handspring back_tuck back_handspring }
+{ front_pike ruota back_handspring back_pike }
+{ front_pike ruota back_handspring back_layout }
+{ front_pike ruota back_handspring arabian }
+{ front_pike ruota back_handspring arabian ruota }
+{ front_pike ruota back_handspring arabian rondata }
+{ front_pike ruota back_tuck }
+{ front_pike ruota back_tuck back_handspring }
+{ front_pike ruota back_tuck back_handspring back_handspring }
+{ front_pike ruota back_tuck back_tuck }
+{ front_pike ruota back_tuck back_pike }
+{ front_pike ruota back_tuck arabian }
+{ front_pike ruota back_pike }
+{ front_pike ruota back_pike back_handspring }
+{ front_pike ruota back_pike back_tuck }
+{ front_pike ruota back_layout }
+{ front_pike ruota back_layout back_handspring }
+{ front_pike ruota double_back_tuck }
+{ front_pike ruota double_back_layout }
+{ front_pike ruota arabian }
+{ front_pike ruota arabian ruota }
+{ front_pike ruota arabian ruota back_handspring }
+{ front_pike ruota arabian rondata }
+{ front_pike ruota arabian rondata back_handspring }
+{ front_pike ruota arabian ribaltata_a_2 }
+{ front_pike ruota arabian ribaltata_a_2 ruota }
+{ front_pike ruota arabian ribaltata_a_2 rondata }
+{ front_pike ruota arabian front_tuck }
+{ front_pike rondata }
+{ front_pike rondata back_handspring }
+{ front_pike rondata back_handspring back_handspring }
+{ front_pike rondata back_handspring back_handspring back_handspring }
+{ front_pike rondata back_handspring back_handspring back_tuck }
+{ front_pike rondata back_handspring back_tuck }
+{ front_pike rondata back_handspring back_tuck back_handspring }
+{ front_pike rondata back_handspring back_pike }
+{ front_pike rondata back_handspring back_layout }
+{ front_pike rondata back_handspring arabian }
+{ front_pike rondata back_handspring arabian ruota }
+{ front_pike rondata back_handspring arabian rondata }
+{ front_pike rondata back_tuck }
+{ front_pike rondata back_tuck back_handspring }
+{ front_pike rondata back_tuck back_handspring back_handspring }
+{ front_pike rondata back_tuck back_tuck }
+{ front_pike rondata back_tuck back_pike }
+{ front_pike rondata back_tuck arabian }
+{ front_pike rondata back_pike }
+{ front_pike rondata back_pike back_handspring }
+{ front_pike rondata back_pike back_tuck }
+{ front_pike rondata back_layout }
+{ front_pike rondata back_layout back_handspring }
+{ front_pike rondata double_back_tuck }
+{ front_pike rondata double_back_layout }
+{ front_pike rondata arabian }
+{ front_pike rondata arabian ruota }
+{ front_pike rondata arabian ruota back_handspring }
+{ front_pike rondata arabian rondata }
+{ front_pike rondata arabian rondata back_handspring }
+{ front_pike rondata arabian ribaltata_a_2 }
+{ front_pike rondata arabian ribaltata_a_2 ruota }
+{ front_pike rondata arabian ribaltata_a_2 rondata }
+{ front_pike rondata arabian front_tuck }
+{ front_pike ribaltata_a_2 }
+{ front_pike ribaltata_a_2 ruota }
+{ front_pike ribaltata_a_2 ruota back_handspring }
+{ front_pike ribaltata_a_2 ruota back_handspring back_handspring }
+{ front_pike ribaltata_a_2 ruota back_handspring back_tuck }
+{ front_pike ribaltata_a_2 ruota back_tuck }
+{ front_pike ribaltata_a_2 ruota back_tuck back_handspring }
+{ front_pike ribaltata_a_2 ruota back_pike }
+{ front_pike ribaltata_a_2 ruota back_layout }
+{ front_pike ribaltata_a_2 ruota arabian }
+{ front_pike ribaltata_a_2 ruota arabian ruota }
+{ front_pike ribaltata_a_2 ruota arabian rondata }
+{ front_pike ribaltata_a_2 rondata }
+{ front_pike ribaltata_a_2 rondata back_handspring }
+{ front_pike ribaltata_a_2 rondata back_handspring back_handspring }
+{ front_pike ribaltata_a_2 rondata back_handspring back_tuck }
+{ front_pike ribaltata_a_2 rondata back_tuck }
+{ front_pike ribaltata_a_2 rondata back_tuck back_handspring }
+{ front_pike ribaltata_a_2 rondata back_pike }
+{ front_pike ribaltata_a_2 rondata back_layout }
+{ front_pike ribaltata_a_2 rondata arabian }
+{ front_pike ribaltata_a_2 rondata arabian ruota }
+{ front_pike ribaltata_a_2 rondata arabian rondata }
+{ front_pike ribaltata_a_2 ribaltata_a_2 }
+{ front_pike ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_pike ribaltata_a_2 ribaltata_a_2 ruota back_handspring }
+{ front_pike ribaltata_a_2 ribaltata_a_2 ruota back_tuck }
+{ front_pike ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_pike ribaltata_a_2 ribaltata_a_2 rondata back_handspring }
+{ front_pike ribaltata_a_2 ribaltata_a_2 rondata back_tuck }
+{ front_pike ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ front_pike ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_pike ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_pike ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ front_pike ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ front_pike ribaltata_a_2 ribaltata_a_2 front_tuck ruota }
+{ front_pike ribaltata_a_2 ribaltata_a_2 front_tuck rondata }
+{ front_pike ribaltata_a_2 ribaltata_a_2 front_pike }
+{ front_pike ribaltata_a_2 front_tuck }
+{ front_pike ribaltata_a_2 front_tuck ruota }
+{ front_pike ribaltata_a_2 front_tuck ruota back_handspring }
+{ front_pike ribaltata_a_2 front_tuck rondata }
+{ front_pike ribaltata_a_2 front_tuck rondata back_handspring }
+{ front_pike ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ front_pike ribaltata_a_2 front_tuck ribaltata_a_2 ruota }
+{ front_pike ribaltata_a_2 front_tuck ribaltata_a_2 rondata }
+{ front_pike ribaltata_a_2 front_tuck front_tuck }
+{ front_pike ribaltata_a_2 front_pike }
+{ front_pike ribaltata_a_2 front_pike ruota }
+{ front_pike ribaltata_a_2 front_pike rondata }
+{ front_pike ribaltata_a_2 front_pike ribaltata_a_2 }
+{ front_pike ribaltata_a_2 front_layout }
+{ front_pike ribaltata_a_2 front_layout ruota }
+{ front_pike ribaltata_a_2 front_layout rondata }
+{ front_pike ribaltata_a_2 double_front_tuck }
+{ front_pike front_tuck }
+{ front_pike front_tuck ruota }
+{ front_pike front_tuck ruota back_handspring }
+{ front_pike front_tuck ruota back_handspring back_handspring }
+{ front_pike front_tuck ruota back_tuck }
+{ front_pike front_tuck ruota back_pike }
+{ front_pike front_tuck ruota arabian }
+{ front_pike front_tuck rondata }
+{ front_pike front_tuck rondata back_handspring }
+{ front_pike front_tuck rondata back_handspring back_handspring }
+{ front_pike front_tuck rondata back_tuck }
+{ front_pike front_tuck rondata back_pike }
+{ front_pike front_tuck rondata arabian }
+{ front_pike front_tuck ribaltata_a_2 }
+{ front_pike front_tuck ribaltata_a_2 ruota }
+{ front_pike front_tuck ribaltata_a_2 ruota back_handspring }
+{ front_pike front_tuck ribaltata_a_2 rondata }
+{ front_pike front_tuck ribaltata_a_2 rondata back_handspring }
+{ front_pike front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ front_pike front_tuck ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_pike front_tuck ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_pike front_tuck ribaltata_a_2 front_tuck }
+{ front_pike front_tuck front_tuck }
+{ front_pike front_tuck front_tuck ruota }
+{ front_pike front_tuck front_tuck rondata }
+{ front_pike front_tuck front_tuck ribaltata_a_2 }
+{ front_pike front_tuck front_pike }
+{ front_pike front_tuck front_pike ruota }
+{ front_pike front_tuck front_pike rondata }
+{ front_pike front_tuck front_layout }
+{ front_pike front_pike }
+{ front_pike front_pike ruota }
+{ front_pike front_pike ruota back_handspring }
+{ front_pike front_pike ruota back_tuck }
+{ front_pike front_pike rondata }
+{ front_pike front_pike rondata back_handspring }
+{ front_pike front_pike rondata back_tuck }
+{ front_pike front_pike ribaltata_a_2 }
+{ front_pike front_pike ribaltata_a_2 ruota }
+{ front_pike front_pike ribaltata_a_2 rondata }
+{ front_pike front_pike ribaltata_a_2 ribaltata_a_2 }
+{ front_pike front_pike front_tuck }
+{ front_pike front_pike front_tuck ruota }
+{ front_pike front_pike front_tuck rondata }
+{ front_pike front_pike front_pike }
+{ front_pike front_layout }
+{ front_pike front_layout ruota }
+{ front_pike front_layout ruota back_handspring }
+{ front_pike front_layout rondata }
+{ front_pike front_layout rondata back_handspring }
+{ front_pike front_layout ribaltata_a_2 }
+{ front_pike front_layout ribaltata_a_2 ruota }
+{ front_pike front_layout ribaltata_a_2 rondata }
+{ front_pike front_layout front_tuck }
+{ front_pike double_front_tuck }
+{ front_pike double_front_tuck ruota }
+{ front_pike double_front_tuck rondata }
+{ front_pike double_front_tuck ribaltata_a_2 }
+{ front_pike double_front_layout }
+{ front_pike triple_front_tuck }
+{ front_layout }
+{ front_layout ruota }
+{ front_layout ruota back_handspring }
+{ front_layout ruota back_handspring back_handspring }
+{ front_layout ruota back_handspring back_handspring back_handspring }
+{ front_layout ruota back_handspring back_tuck }
+{ front_layout ruota back_handspring back_pike }
+{ front_layout ruota back_handspring arabian }
+{ front_layout ruota back_tuck }
+{ front_layout ruota back_tuck back_handspring }
+{ front_layout ruota back_tuck back_tuck }
+{ front_layout ruota back_pike }
+{ front_layout ruota back_pike back_handspring }
+{ front_layout ruota back_layout }
+{ front_layout ruota double_back_tuck }
+{ front_layout ruota arabian }
+{ front_layout ruota arabian ruota }
+{ front_layout ruota arabian rondata }
+{ front_layout ruota arabian ribaltata_a_2 }
+{ front_layout rondata }
+{ front_layout rondata back_handspring }
+{ front_layout rondata back_handspring back_handspring }
+{ front_layout rondata back_handspring back_handspring back_handspring }
+{ front_layout rondata back_handspring back_tuck }
+{ front_layout rondata back_handspring back_pike }
+{ front_layout rondata back_handspring arabian }
+{ front_layout rondata back_tuck }
+{ front_layout rondata back_tuck back_handspring }
+{ front_layout rondata back_tuck back_tuck }
+{ front_layout rondata back_pike }
+{ front_layout rondata back_pike back_handspring }
+{ front_layout rondata back_layout }
+{ front_layout rondata double_back_tuck }
+{ front_layout rondata arabian }
+{ front_layout rondata arabian ruota }
+{ front_layout rondata arabian rondata }
+{ front_layout rondata arabian ribaltata_a_2 }
+{ front_layout ribaltata_a_2 }
+{ front_layout ribaltata_a_2 ruota }
+{ front_layout ribaltata_a_2 ruota back_handspring }
+{ front_layout ribaltata_a_2 ruota back_handspring back_handspring }
+{ front_layout ribaltata_a_2 ruota back_tuck }
+{ front_layout ribaltata_a_2 ruota back_pike }
+{ front_layout ribaltata_a_2 ruota arabian }
+{ front_layout ribaltata_a_2 rondata }
+{ front_layout ribaltata_a_2 rondata back_handspring }
+{ front_layout ribaltata_a_2 rondata back_handspring back_handspring }
+{ front_layout ribaltata_a_2 rondata back_tuck }
+{ front_layout ribaltata_a_2 rondata back_pike }
+{ front_layout ribaltata_a_2 rondata arabian }
+{ front_layout ribaltata_a_2 ribaltata_a_2 }
+{ front_layout ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_layout ribaltata_a_2 ribaltata_a_2 ruota back_handspring }
+{ front_layout ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_layout ribaltata_a_2 ribaltata_a_2 rondata back_handspring }
+{ front_layout ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 }
+{ front_layout ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 ruota }
+{ front_layout ribaltata_a_2 ribaltata_a_2 ribaltata_a_2 rondata }
+{ front_layout ribaltata_a_2 ribaltata_a_2 front_tuck }
+{ front_layout ribaltata_a_2 front_tuck }
+{ front_layout ribaltata_a_2 front_tuck ruota }
+{ front_layout ribaltata_a_2 front_tuck rondata }
+{ front_layout ribaltata_a_2 front_tuck ribaltata_a_2 }
+{ front_layout ribaltata_a_2 front_pike }
+{ front_layout ribaltata_a_2 front_pike ruota }
+{ front_layout ribaltata_a_2 front_pike rondata }
+{ front_layout ribaltata_a_2 front_layout }
+{ front_layout front_tuck }
+{ front_layout front_tuck ruota }
+{ front_layout front_tuck ruota back_handspring }
+{ front_layout front_tuck ruota back_tuck }
+{ front_layout front_tuck rondata }
+{ front_layout front_tuck rondata back_handspring }
+{ front_layout front_tuck rondata back_tuck }
+{ front_layout front_tuck ribaltata_a_2 }
+{ front_layout front_tuck ribaltata_a_2 ruota }
+{ front_layout front_tuck ribaltata_a_2 rondata }
+{ front_layout front_tuck ribaltata_a_2 ribaltata_a_2 }
+{ front_layout front_tuck front_tuck }
+{ front_layout front_tuck front_tuck ruota }
+{ front_layout front_tuck front_tuck rondata }
+{ front_layout front_tuck front_pike }
+{ front_layout front_pike }
+{ front_layout front_pike ruota }
+{ front_layout front_pike ruota back_handspring }
+{ front_layout front_pike rondata }
+{ front_layout front_pike rondata back_handspring }
+{ front_layout front_pike ribaltata_a_2 }
+{ front_layout front_pike ribaltata_a_2 ruota }
+{ front_layout front_pike ribaltata_a_2 rondata }
+{ front_layout front_pike front_tuck }
+{ front_layout front_layout }
+{ front_layout front_layout ruota }
+{ front_layout front_layout rondata }
+{ front_layout front_layout ribaltata_a_2 }
+{ front_layout double_front_tuck }
+{ front_layout double_front_tuck ruo
