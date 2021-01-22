@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+
+\title{Relazione laboratorio 13}
+\author{Alberto Verna (s273841)}
+\date{A.A. 2020/21}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\begin{document}
+
+    \maketitle
+
+    \section{Strutture dati}
+    Al fine dell'esercizio, sono state definite le seguenti strutture dati:
+    \begin{itemize}
+        \item Un quasi ADT \code{edge\_t}, contenente le informazioni riguardo gli archi (nodo di partenza, nodo di arrivo, peso) e definito nel file \code{edge.h}. Le funzioni definite sono \code{edge\_create} per creare un arco e \code{edge\_print} per stampare i dati a schermo.
+        \item Un ADT di prima classe \code{st\_t}, contenente le informazioni riguardo la tabella di simboli e definito nel file \code{st.h}. Le funzioni definite sono \code{st\_init} per l'inizializzazione, \code{st\_free} per la liberazione dalla memoria, \code{st\_add} per l'aggiunta di un elemento alla tabella, \code{st\_getIdByIndex} e \code{st\_getIndexById} per l'estrazione dalla tabella della chiave e dell'indice (rispettivamente) che identificano un vertice.
+        \item Un ADT di prima classe \code{graph\_t}, contenente le informazioni riguardo il grafo e definito nel file \code{graph.h}. Le funzioni definite sono:
+            \begin{itemize}
+                \item \code{graph\_init} e \code{graph\_free} per la creazione e liberazione dalla memoria
+                \item \code{graph\_addEdge} e \code{graph\_removeEdge} per l'aggiunta e la rimozione di un arco
+                \item \code{graph\_vertexAmount} per ricavare il numero di vertici del grafo
+                \item \code{graph\_isAcyclic}, che determina se il grafo è aciclico (spiegata più in dettaglio nella parte successiva)
+                \item \code{graph\_maxPaths}, usata per ricavare i cammini massimi (spigata più in dettaglio nella parte successiva)
+            \end{itemize}
+            Il metodo usato per la memorizzazione degli archi è quello della matrice delle adiacenze, in quanto permette una veloce aggiunta e rimozione degli archi (complessità O(1)), che vengono usate spesso per ricavare gli insiemi di rimozione degli archi dal grafo.
+    \end{itemize}
+
+    \section{Algoritmi}
+    
+    Il file \code{main.c} inizializza le strutture e legge i dati da file mediante le funzioni \code{st\_fill} e \code{graph\_fill}. Viene poi verificato se il grafo appena letto è aciclico: se non lo è, allora viene trasformato in un DAG mediante la funzione \code{makeDAG}, altrimenti si salta al prossimo passaggio. A questo punto, dato un grafo necessariamente aciclico, vengono calcolati i cammini massimi da ogni vertice di partenza e verso ogni vertice chiamando la funzione \code{graph\_maxPaths}.
+
+    Si vanno a spiegare più in dettaglio le scelte algoritmiche prese nelle funzioni più importanti:
+    \begin{itemize}
+        \item La funzione \code{makeDAG} usata per generare un DAG consiste nel ricavare l'insieme di archi avente cardinalità minima e peso complessivo massimo tale che la rimozione degli archi dal grafo di partenza porti alla formazione di un DAG. Questo viene fatto tramite la funzione \code{combSempl} che, come suggerito dal nome, usa il modello delle combinazioni semplici per generare tutti gli insiemi di una data cardinalità. Quando un insieme è stato generato, vengono rimossi tutti i suoi archi dal grafo di partenza, si verifica se il nuovo grafo è aciclico, per poi riaggiungere gli archi tolti. Se il risultato della verifica è vero, allora è stato trovato un insieme di archi valido e questo viene stampato a schermo. Viene inoltre controllato se il peso complessivo dell'insieme di archi è maggiore di quello massimo corrente, in modo che al termine dell'esecuzione venga salvato l'insieme a peso massimo in una struttura dati (array di archi \code{max\_wt\_e}). La funzione \code{combSempl} viene ripetuta aumentando linearmente la cardinalità dell'insieme di archi, finchè non viene trovato almeno un insieme valido. Trovato l'insieme \code{max\_wt\_e}, tutti i suoi archi vengono definitivamente rimossi dal grafo.
+        \item La funzione \code{graph\_isAcyclic} effettua una visita in profondità del grafo e controlla che non siano presenti archi backward. Se il grafo ne contiene almeno uno, allora questo contiene dei cicli.
+        \item La funzione \code{graph\_maxPaths} determina l'ordine topologico del grafo effettuando una visita in profondità. Da quel punto, si ripete la procedura di calcolo dei cammini massimi per ogni vertice, preso come partenza. Questa procedura consiste nell'applicare, per ogni vertice in ordine topologico (a partire dal nodo di partenza corrente), una relaxation inversa a tutti gli archi uscenti. 
+        \item La \textbf{visita in profondità} viene effettuata mediante una singola funzione \code{dfsR}, definita in modo statico in \code{graph.c}. Questa viene usata sia per ricavare l'ordine topologico, sia per determinare l'eventuale presenza di un arco di tipo backward. In base all'operazione desiderata, alcuni dei suoi parametri possono essere impostati a \code{NULL}:
+            \begin{itemize}
+                \item Se si vuole determinare se un grafo è aciclico, allora i parametri \code{ts} (array contenente l'ordine topologico) e \code{ts\_i} (indice che decrementa linearmente dal numero \code{N} di vertici a 0) possono essere nulli. In questo caso, la visita viene interrotta al primo arco backward (completa se il grafo è un DAG).
+                \item Se si vuole ricavare l'ordine topologico, allora il parametro \code{post} (contenente per ogni vertice una booleana che indica se è stata terminata la sua elaborazione) può essere nullo. In questo caso, la visita sarà completa, cioè non viene interrotta al primo arco backward (anche perchè in un DAG non sono presenti archi backward).
+            \end{itemize}
+    \end{itemize}
+
+\end{document}
