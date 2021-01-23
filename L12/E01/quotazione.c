@@ -26,5 +26,5 @@ trans_t transazione_null() {
 void quotazione_print(FILE* fp, quot_t q) {
     fprintf(fp, "[ Data: ");
     data_print(fp, q.data);
-    fprintf(fp, " Quotazione: %f ]", q.somma/q.num);
+    fprintf(fp, " Quotazione: %.2f ]", q.somma/q.num);
 }

@@ -126,8 +126,19 @@ void graph_maxPaths(graph_t g, st_t sym_table) {
 
         /* Stampa dati ottenuti */
         printf("Vertice di partenza [%s]:\n", st_getIdByIndex(sym_table, v));
-        for(i=0; i<g->n_v; i++)
-            printf("Vertice [%s]: peso massimo %d, nodo sorgente [%s]\n", st_getIdByIndex(sym_table, i), max_wt[i], st_getIdByIndex(sym_table,st[i]));
+        for(i=0; i<g->n_v; i++) {
+            printf("Vertice [%s]: ", st_getIdByIndex(sym_table, i));
+            if(i!=v && st[i] == i)
+                printf("non raggiungibile\n");
+            else
+                printf("peso massimo %d, nodo sorgente [%s]\n", max_wt[i], st_getIdByIndex(sym_table,st[i]));
+        }
+        printf("\n");         printf("Vertice [%s]: ", st_getIdByIndex(sym_table, i));
+            if(i!=v && st[i] == i)
+                printf("non raggiungibile\n");
+            else
+                printf("peso massimo %d, nodo sorgente [%s]\n", max_wt[i], st_getIdByIndex(sym_table,st[i]));
+        }
         printf("\n");
     }
 }

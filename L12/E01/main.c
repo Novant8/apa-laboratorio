@@ -138,11 +138,11 @@ void cmd_gestisci(cmd_e cmd, lista_titoli_t l) {
             scanf("%f", &s);
             r = titolo_rapportoMaxMin(t);
             if(r > s) {
-                printf("Rapporto prima del bilanciamento: %f\n", r);
+                printf("Rapporto prima del bilanciamento: %.02f\n", r);
                 titolo_bilanciaQuotazioni(t);
-                printf("Rapporto dopo il bilanciamento: %f\n", titolo_rapportoMaxMin(t));
+                printf("Rapporto dopo il bilanciamento: %.02f\n", titolo_rapportoMaxMin(t));
             } else {
-                printf("Il rapporto %f non supera la soglia inserita.\n", r);
+                printf("Il rapporto %.02f non supera la soglia inserita.\n", r);
             }            
             break;
         case c_fine:

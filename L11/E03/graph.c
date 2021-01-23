@@ -107,11 +107,11 @@ void graph_display(graph_t g, st_t st) {
     for(int i=0; i<g->n_v; i++) {
         printf("Vertice:\n");
         key_print(st_getKey(st, i));
-        printf("Archi:\n");
+        printf("\nAdiacenze:\n");
         for(int j=0; j<g->n_v; j++) {
             if(i!=j && g->m_adj[i][j]>=0) {
                 key_print(st_getKey(st, j));
-                printf("(flusso: %d)\n", g->m_adj[i][j]);
+                printf(" (flusso: %d)\n", g->m_adj[i][j]);
             }
         }
         printf("\n");

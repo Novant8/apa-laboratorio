@@ -14,23 +14,23 @@ typedef struct ora_s {
     int m;
 } ora_t;
 
-/* Funzioni di lettura da file */
+/* Lettura da file */
 data_t data_read(FILE* fp);
 ora_t ora_read(FILE* fp);
 
-/* Funzione di confronto */
+/* Confronto */
 int data_cmp(data_t d1, data_t d2);
 int ora_cmp(ora_t h1, ora_t o2);
 
-/* Funzioni di stampa su file */
+/* Stampa su file */
 void data_print(FILE* fp, data_t d);
 void ora_print(FILE* fp, ora_t h);
 
-/* Funzioni che generano elementi nulli */
+/* Generazione elementi nulli */
 data_t data_null();
 ora_t ora_null();
 
-/* Funzioni che controllano se gli elementi sono nulli */
+/* Controllo se gli elementi sono nulli */
 int data_isnull(data_t d);
 int ora_isnull(ora_t h);
 

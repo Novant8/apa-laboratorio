@@ -16,10 +16,12 @@ typedef struct trans_s {
     int num;
 } trans_t;
 
+/* Funzioni di transazione */
 trans_t transazione_leggi(FILE* fp);
 int transazione_cmp(trans_t t1, trans_t t2);
 trans_t transazione_null();
 
+/* Stampa quotazione */
 void quotazione_print(FILE* fp, quot_t q);
 
 

@@ -14,6 +14,9 @@ ora_t ora_read(FILE* fp) {
     return h;
 }
 
+/**
+ * La funzione converte una struttura data_t in un intero nel formato AAAAMMGG
+ */ 
 static int data_toint(data_t d) {
     return d.a * 10000 + d.m*100 + d.g;
 }
@@ -22,6 +25,9 @@ int data_cmp(data_t d1, data_t d2) {
     return data_toint(d1)-data_toint(d2);
 }
 
+/**
+ * La funzione converte una struttura ora_t in un intero nel formato HHMM
+ */ 
 static int ora_toint(ora_t h) {
     return h.h*100 + h.m;
 }
@@ -31,14 +37,14 @@ int ora_cmp(ora_t h1, ora_t h2) {
 }
 
 void data_print(FILE* fp, data_t d) {
-    if(data_cmp(d, data_null())!=0)
+    if(data_cmp(d, data_null()))
         fprintf(fp, "%d/%02d/%02d", d.a, d.m, d.g);
     else
         fprintf(fp, "DATA INVALIDA");
 }
 
 void ora_print(FILE* fp, ora_t h) {
-    if(ora_cmp(h, ora_null())!=0)
+    if(ora_cmp(h, ora_null()))
         fprintf(fp, "%d:%02d", h.h, h.m);
     else
         fprintf(fp, "ORA INVALIDA");

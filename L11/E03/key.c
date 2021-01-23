@@ -5,9 +5,9 @@
 #include "key.h"
 
 int key_cmp(keys_t k1, keys_t k2) {
-    int res = strcmp(k1.net, k2.net);
+    /*int res = strcmp(k1.net, k2.net);
     if(res != 0)
-        return res;
+        return res;*/
     return strcmp(k1.elab, k2.elab);
 }
 
@@ -27,13 +27,13 @@ int key_isnull(keys_t k) {
 }
 
 void key_print(keys_t k) {
-    printf("RETE [%s], ELAB [%s]\n", k.net, k.elab);
+    printf("RETE [%s], ELAB [%s]", k.net, k.elab);
 }
 
 keys_t key_read() {
     keys_t k;
-    printf("Inserire nome rete: ");
-    scanf("%s", k.net);
+    /*printf("Inserire nome rete: ");
+    scanf("%s", k.net);*/
     printf("Inserire nome elaboratore: ");
     scanf("%s", k.elab);
     return k;
