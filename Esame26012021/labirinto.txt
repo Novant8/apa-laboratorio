@@ -1,0 +1,24 @@
+10
+Ingresso 0 0 0
+Stanza1 1 0 3
+Stanza2 1 0 4
+Stanza3 2 0 7
+Stanza4 2 0 7
+Stanza5 3 20 10
+Stanza6 3 0 8
+Stanza7 4 0 2
+Stanza8 5 30 6
+Stanza9 6 50 3
+Ingresso Stanza1 0
+Ingresso Stanza2 0
+Stanza1 Stanza3 0
+Stanza2 Stanza4 0
+Stanza3 Stanza5 1
+Stanza4 Stanza5 1
+Stanza3 Stanza6 0
+Stanza4 Stanza6 0
+Stanza5 Stanza6 0
+Stanza6 Stanza7 0
+Stanza6 Stanza8 1
+Stanza7 Stanza8 0
+Stanza8 Stanza9 1

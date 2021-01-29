@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+
+\title{Relazione esercizio 18 punti (labirinto)}
+\author{Verna Alberto (s273841)}
+\date{Appello del 26/01/2021}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\riga}[1]{[\code{riga #1}]}
+\newcommand{\righe}[1]{[\code{righe #1}]}
+
+\begin{document}
+
+    \maketitle
+
+    \section{Strutture dati}
+    Nella soluzione proposta ho utilizzato le seguenti strutture dati:
+    \begin{itemize}
+        \item Un ADT di prima classe \code{Graph}, definito in \code{Graph.h}. La struttura contiene un vettore di stanze contenute nel labirinto, le cui informazioni sono memorizzate in un'apposita struttura \code{Stanza}, definita in \code{Graph.c}. Gli indici di questo vettore coincidono con quelli di una tabella di simboli, salvata anch'essa nella struttura \code{Graph}. La rappresentazione del grafo viene fatta mediante una matrice delle adiacenze. Ogni cella della matrice contiene le informazioni sui cunicoli: una booleana \code{c} che indica se il cunicolo esiste (quindi se due stanze sono direttamente connesse) e una booleana \code{t} che indica se il cunicolo contiene una trappola. Queste informazioni sono definite dalla struttura \code{Vertex}, anch'essa definita all'interno di \code{Graph.c}.
+        \item Un quasi ADT \code{Path}, incluso in \code{Graph.h}. Essa contiene un vettore di interi che definisce l'ordine delle stanze che vengono visitate nel percorso, il numero totale di stanze visitate (che sarà la lunghezza del vettore) e la ricchezza totale accumulata durante il percorso.
+    \end{itemize}
+
+    \section{Strategie risolutive}
+    Per ogni domanda (eccetto la 8 sulle strutture dati) andrò a spiegare brevemente il mio approccio alla sua risoluzione.
+
+    \subsection*{Domanda 9}
+    La funzione \code{GRAPHload} inizializza un nuovo grafo mediante la funzione \code{GRAPHinit} (definita implicitamente), la quale va ad allocare il vettore di stanze e la matrice di adiacenza, e ad inizializzare la tabella di simboli associata al grafo. Dopo l'inizializzazione del grafo, la funzione riempie la tabella di simboli leggendo la prima parte del file di input, e inizializza la matrice di adiacenza leggendo la seconda parte.
+
+    \subsection*{Domanda 10}
+    La funzione \code{GRAPHpathLoad} inizializza una struttura di tipo \code{Path}, andando a leggere da file la sequenza di stanze, i cui indici ricavati dalla tabella di simboli verranno salvati nel vettore di stanze apposito. In questo punto, ho supposto che nel file contenente il percorso venga specificato il numero di stanze attraversate prima della sequenza (il file \code{percorso.txt} risulta compatibile con la soluzione proposta).
+    
+    La funzione \code{GRAPHpathCheck} percorre linearmente il vettore di stanze contenuto nella struttura \code{Path}. Ad ogni iterazione, viene controllato se il cunicolo corrente (ossia quello tra la stanza \code{i} e la stanza \code{i-1}) esiste, altrimenti si può dire a priori che il percorso non è valido. Inoltre, vengono decrementati i punti ferita se il cunicolo contiene una trappola, e si tiene conto della quantità di oro totale presa dall'esploratore, nonché del tesoro avente valore massimo. Il ciclo \code{for} può terminare prematuramente, quando di verificano le condizioni di interruzione del percorso (raggiungimento del limite superiore di mosse, esaurimento dei punti ferita). Al termine del ciclo viene effettuato un controllo sull'ultima stanza visitata: in base alla sua profondità, viene eventualmente ridotta la ricchezza, oppure se il livello è superiore a 2 allora il percorso risulta un fallimento.
+    
+    \subsection*{Domanda 11}
+    La funzione \code{GRAPHpathBest} inizializza due strutture \code{Path} e chiama la funzione \code{GRAPHpathBestR}. Quest'ultima si basa sul modello combinatorio delle \emph{disposizioni ripetute}. Ad ogni passaggio ricorsivo, la funzione va ad aggiungere una stanza al percorso \code{p}, direttamente collegata con quella precedente. La condizione di terminazione risulta vera quando il numero di stanze nel percorso \code{p} è pari al limite massimo \code{M}, oppure se sono terminati i punti ferita. In quel caso, si effettua lo stesso controllo sull'ultima stanza visitata visto in \code{GRAPHpathCheck}, per verificare la validità della soluzione ed eventualmente gestire il soccorso dell'esploratore. Se la soluzione corrente \code{p} risulta valida e la ricchezza totale supera quella del percorso migliore \code{best}, allora \code{p} diventerà il nuovo percorso migliore. Il percorso migliore \code{best} viene passato by reference alla funzione ricorsiva, perciò risulta visibile alla funzione chiamante \code{GRAPHpathBest}.
+
+    \section{Modifiche effettuate nella correzione del codice}
+    Premetto che tutte le righe segnate da questo punto si riferiscono al file \code{Graph.c} della revisione. Comincio con l'elencare le principali modifiche effettuate in ambito generale nell'autocorrezione del programma:
+    \begin{enumerate}
+        \item Ho modificato il tipo del dato \code{ricchezza} nella struttura \code{Path} da \code{float} a \code{int}. Nel compito, ho usato il tipo float in quanto ho notato che questa può essere soggetto di divisione, ma non ho notato nella consegna che questa va poi arrotondata.
+        \item Ho dichiarato una funzione \code{PATHinit} che inizializza una struttura di tipo \code{Path}, in modo da rendere il codice più ordinato. \righe{41-47}
+        \item Ho cambiato il nome della struttura \code{Vertex} in \code{Cunicolo}, che personalmente ritengo più appropriato.
+    \end{enumerate}
+    Procedo con l'elencare le modifiche più specifiche a ogni funzione richiesta nel compito:
+    \begin{itemize}
+        \item Nella funzione \code{GRAPHload}:
+            \begin{enumerate}
+                \item Ho aggiunto un \code{\%d} mancato nella prima \code{fscanf}. \riga{57}
+            \end{enumerate}
+        \item Nella funzione \code{GRAPHpathLoad}:
+        \begin{enumerate}
+            \item Ho cambiato il tipo della variabile \code{stanza} da \code{int} a \code{char}. \riga{71}
+        \end{enumerate}
+        \item Nella funzione \code{GRAPHpathCheck}:
+            \begin{enumerate}
+                \item Il passaggio del percorso \code{p} come parametro avviene by reference anzichè by value, in modo da poter rendere visibile la ricchezza del percorso aggiornata al main.
+                \item Ho aggiunto un controllo sulla prima stanza del percorso: se non è un ingresso allora il percorso intero non è valido. \righe{95-96}
+                \item Ho aggiunto nel ciclo \code{for} il controllo che una stanza di uscita non sia in una posizione del percorso diversa dalla fine. In quel caso, il percorso viene considerato come non valido. \righe{107-108}
+                \item Ho aggiunto nel ciclo \code{for} il controllo che la stanza non sia già stata visitata prima di aggiungere il valore dell'oro alla ricchezza del percorso \righe{118, 84-89}. Nel compito, l'oro si rigenera ogni volta che si esce da una stanza. %Questa aggiunta chiama la funzione \code{visited}, il che rende l'algoritmo quadratico anzichè lineare. Un'alternativa potrebbe essere l'aggiunta di una booleana \code{visited} alla sruttura \code{Stanza}, ma in questo caso ho preferito mantenere le strutture \code{Stanza} e \code{Path} indipendenti tra di loro.
+                \item Ho aggiunto la somma del tesoro massimo alla ricchezza del percorso dopo il termine del ciclo \code{for}, dimenticata nel compito. \riga{125}
+                \item Ho considerato l'ultima stanza valida come quella all'interno della cella \code{p->stanze[i-1]} anzichè \code{p->stanze[i]} \righe{128,132}. Nel compito, se il ciclo non termina prematuramente, l'indice \code{i} risulta essere al di fuori dei limiti del vettore \code{p->stanze}. Inoltre, all'interno del ciclo, se l'esploratore perde tutti i suoi punti vita viene incrementato l'indice \code{i} prima di uscire, in modo da marcare la stanza corrente come l'ultima anzichè quella precedente e rendere compatibile la soluzione a questa modifica. \righe{112-114}
+                \item Ho aggiunto il controllo che il percorso passato sia "completo": se il percorso è stato analizzato interamente, risulta interrotto (l'ultima stanza non è un'uscita) e non si sono verificate le condizioni di interruzione, allora il percorso viene considerato come non valido. \righe{128-129}
+                \item Ho rimosso il blocco
+                    \begin{center}
+                        \code{if(p.stanze[i-1].profondita != 0)}
+                    \end{center}
+                    portando fuori il \code{switch} al suo interno. Si tratta di una parte di codice non cancellato completamente durante la prova.
+                \item Ho aggiunto al blocco \code{switch} il caso aggiuntivo in cui la profondità sia 0 \riga{133}. Nel compito, un percorso normale risulterebbe invalido.
+            \end{enumerate}
+        \item Nelle funzioni \code{GRAPHpathBest} e \code{GRAPHpathBestR}:
+            \begin{enumerate}
+                \item Ho aggiunto una condizione di terminazione all'algoritmo ricorsivo: se la posizione precedente (cioè l'ultima posizione valida nel percorso) ha profondità nulla, allora il percorso corrente risulta completato. \riga{150}
+                \item Ho aggiunto al blocco \code{switch} il caso aggiuntivo in cui la profondità sia 0 \riga{153}. Nel compito, un percorso normale risulterebbe invalido.
+                \item Ho aggiunto la somma del tesoro massimo alla ricchezza del percorso dopo il termine della sua generazione, dimenticata nel compito. \riga{164}
+                \item Ho modificato l'aggiornamento del percorso migliore: l'assegnazione \code{$^*$best=p} causa la condivisione tra i due percorsi dello stesso vettore (in quanto dichiarato dinamicamente). Ho quindi sostituito l'assegnazione unica con un ciclo di assegnazioni delle singole celle del vettore \code{best->stanze}. \righe{165-170}
+                \item Ho modificato il comportamento della funzione ricorsiva nel caso in cui la posizione corrente è 0: in quel caso, vengono scelte le sole stanze aventi profondità nulla \righe{174-179}. Nel compito, il ciclo andrebbe subito in errore di segmentazione, dato che si tenterebbe ad accedere alla cella di un vettore avente indice -1.
+                \item L'oro all'interno di una stanza viene rimosso alla prima visita \righe{185-186,190}. Nel compito, l'oro si rigenera ad ogni uscita.
+                \item Ho spostato i controlli sulla presenza di trappole nei cunicoli e sul tesoro di valore massimo direttamente nella chiamata ricorsiva \riga{188}. In questo modo, non serve ripristinare i punti ferita e il tesoro massimo dopo di essa.
+                \item Ho cambiato le dimensioni dei vettori \code{stanze} all'interno di \code{p} e \code{best} da \code{g->n\_stanze} a \code{M}. \righe{202-203}
+            \end{enumerate}
+    \end{itemize}
+
+    \section{Note aggiuntive}
+    \begin{enumerate}
+        \item Nella mia soluzione (sia del compito sia dell'autocorrezione), l'entrata dall'ingresso viene considerata in sé come una mossa.
+        \item Riguardo la funzione \code{GRAPHpathCheck}, se durante la visita di un percorso si ha un'interruzione (anche se la visita non risulta completa), il percorso può comunque risultare valido se l'ultima stanza visitata è di livello 1 o 2.
+        %\item L'esploratore, dopo che ha perso tutti i punti ferita, riesce comunque a collezionare l'oro presente nella stanza dopo il cunicolo con la trappola.
+    \end{enumerate}
+
+\end{document}
